@@ -1,0 +1,102 @@
+@import 'styles/variables';
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  overflow-x: hidden;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  line-height: 1.5;
+}
+
+.glide__arrows {
+  display: flex;
+  justify-content: center;
+}
+
+.glide__arrow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $primary;
+  color: $white;
+  border: 2px solid $primary;
+  border-radius: 50%;
+  height: 32px;
+  width: 32px;
+  z-index: 2;
+  transition: color 0.2s, background-color 0.2s;
+  cursor: pointer;
+  margin: 0 6px;
+
+  &:hover {
+    background-color: $white;
+    color: $primary;
+  }
+
+  &--right {
+    transform: rotate(180deg);
+  }
+}
+
+.container {
+  margin: auto;
+}
+
+@media only screen and (min-width: 480px) {
+  .container {
+    max-width: 472px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .container {
+    max-width: 920px;
+  }
+  .glide__arrow {
+    position: absolute;
+    top: 30%;
+    margin: 0;
+
+    &--right {
+      left: 120px;
+      transform: rotate(0deg);
+    }
+
+    &--left {
+      display: none;
+      right: 20px;
+      transform: rotate(180deg);
+    }
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .container {
+    max-width: 1060px;
+  }
+
+  .glide__arrow {
+    &--right {
+      left: 220px;
+    }
+  }
+}

@@ -1,0 +1,38 @@
+@import 'styles/variables';
+
+.container {
+  text-align: center;
+}
+
+.title {
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  color: #e53830;
+  margin-bottom: 16px;
+}
+
+.primary {
+  color: #030203;
+  text-transform: capitalize;
+  font-weight: 700;
+  font-size: 2.4rem;
+  max-width: 480px;
+  margin: 0 auto 16px;
+}
+
+.secondary {
+  font-size: 1.1rem;
+  color: $paragraph;
+}
+
+@media only screen and (min-width: 480px) {
+  .secondary {
+    font-size: 1rem;
+  }
+}
+@media only screen and (min-width: 768px) {
+}
+@media only screen and (min-width: 1024px) {
+}
+@media only screen and (min-width: 1200px) {
+}
