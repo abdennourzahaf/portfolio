@@ -1,5 +1,8 @@
 import Head from 'next/head';
 import Navbar from '../components/Navbar/Navbar';
+import Contact from '../containers/Contact/Contact';
+import FAQ from '../containers/FAQ/FAQ';
+import Footer from '../containers/Footer/Footer';
 import Hero from '../containers/Hero/Hero';
 import Posts from '../containers/Posts/Posts';
 import Process from '../containers/Process/Process';
@@ -17,13 +20,18 @@ export default function Home() {
         <link rel='icon' href='/favicon.ico' />
       </Head>
       <Navbar />
-      <Hero />
-      <Projects />
-      <Process />
-      <Skills />
-      <Services />
-      <Testimonials />
-      <Posts />
+      <main>
+        <Hero />
+        <Projects />
+        <Process />
+        <Skills />
+        <Services />
+        <Testimonials />
+        <Posts />
+        <FAQ />
+        <Contact />
+      </main>
+      <Footer />
     </>
   );
 }

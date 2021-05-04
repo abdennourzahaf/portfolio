@@ -85,6 +85,7 @@ const Testimonials = () => {
           <div className='glide__bullets' data-glide-el='controls[nav]'>
             {brandsArray.map((_, index) => (
               <button
+                key={index}
                 className={
                   'glide__bullet' +
                   (index === activeBullet ? ' glide__bullet--current' : '') +

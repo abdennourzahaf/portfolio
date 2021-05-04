@@ -172,4 +172,12 @@ p {
   .container {
     max-width: 1024px;
   }
+
+  #projects-slider {
+    .glide__arrow {
+      &--right {
+        left: 220px;
+      }
+    }
+  }
 }
