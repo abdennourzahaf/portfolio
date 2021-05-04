@@ -6,7 +6,7 @@ import styles from './styles.module.scss';
 
 const Skills = () => {
   return (
-    <div className={styles.section}>
+    <section className={styles.section}>
       <div className={styles.container + ' container'}>
         <div className={styles.textContainer}>
           <h1 className={styles.title}>Which is why we Never Stop Learning.</h1>
@@ -45,7 +45,7 @@ const Skills = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

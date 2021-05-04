@@ -39,7 +39,7 @@ const Testimonials = () => {
     brandsGlide.mount();
   }, []);
   return (
-    <div className={styles.section}>
+    <section className={styles.section}>
       <SectionHeader
         title='good words'
         primary='What My Clients Say?'
@@ -107,7 +107,7 @@ const Testimonials = () => {
           </div>
         ))}
       </div>
-    </div>
+    </section>
   );
 };
 

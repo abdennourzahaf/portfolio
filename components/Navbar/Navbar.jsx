@@ -35,11 +35,7 @@ const Navbar = () => {
   if (scrolledEnough) headerClasses.push(styles.scrolled);
 
   return (
-    <header
-      // className={`${styles.header} ${
-      //   isMobileNavOpen ? styles.mobileActive : ''
-      // }`}
-      className={headerClasses.join(' ')}>
+    <header className={headerClasses.join(' ')}>
       <div
         className={styles.overlay}
         onClick={() => setIsMobileNavOpen(false)}></div>

@@ -6,7 +6,7 @@ import styles from './styles.module.scss';
 
 const Process = () => {
   return (
-    <div className={styles.section}>
+    <section className={styles.section} id='process'>
       <SectionHeader
         title='process'
         primary='From Lean Design Sprints to Agile Development'
@@ -28,7 +28,7 @@ const Process = () => {
       <div className={styles.bgShape2}>
         <img src='/assets/bd-element-2.png' alt='background' />
       </div>
-    </div>
+    </section>
   );
 };
 

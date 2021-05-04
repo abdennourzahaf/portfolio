@@ -57,6 +57,10 @@
 
 .navListItem {
   margin: 0 16px;
+  transition: color 0.2s;
+  &:hover {
+    color: $primary;
+  }
 }
 
 .secondaryLiksContainer {
@@ -106,13 +110,6 @@
   transition: transform 0.3s;
 }
 
-// .linksContainer {
-//   display: none;
-//   align-items: center;
-//   justify-content: space-between;
-//   flex: 1;
-// }
-
 .mobileNavList {
   display: flex;
   flex-direction: column;
@@ -126,6 +123,10 @@
 
 .mobileNavListItem {
   margin: 16px 0;
+  transition: color 0.2s;
+  &:hover {
+    color: $primary;
+  }
 }
 
 .mobileSecondaryLiksContainer {

@@ -6,7 +6,7 @@ import styles from './styles.module.scss';
 
 const Services = () => {
   return (
-    <div className={styles.section}>
+    <section className={styles.section}>
       <SectionHeader
         title='services'
         primary='Ways I can help you'
@@ -20,7 +20,7 @@ const Services = () => {
           <img src='/assets/bg-red-dots.png' alt='background' />
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

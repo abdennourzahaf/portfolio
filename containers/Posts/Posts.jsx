@@ -19,7 +19,7 @@ const Posts = () => {
   }, []);
 
   return (
-    <div className={styles.section}>
+    <section className={styles.section} id='blog'>
       <SectionHeader
         title='RECENT POSTS'
         primary='Check what’s trending'
@@ -48,7 +48,7 @@ const Posts = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
