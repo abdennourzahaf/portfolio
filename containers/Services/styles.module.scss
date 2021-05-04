@@ -1,0 +1,47 @@
+.section {
+  padding: 120px 20px 100px;
+}
+
+.cardsContainer {
+  position: relative;
+  margin-top: 80px;
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 20px;
+}
+
+.redDots {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 80px;
+  transform: translate(-40%, -190%);
+  z-index: -1;
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+@media only screen and (min-width: 480px) {
+}
+@media only screen and (min-width: 768px) {
+  .cardsContainer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .cardsContainer {
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 24px;
+    row-gap: 48px;
+  }
+  .redDots {
+    width: 90px;
+    top: 50%;
+    left: 30%;
+    transform: translate(-10%, -50%);
+  }
+}
+@media only screen and (min-width: 1200px) {
+}

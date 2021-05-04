@@ -15,14 +15,16 @@
   color: #030203;
   text-transform: capitalize;
   font-weight: 700;
-  font-size: 2.4rem;
+  font-size: 2.2rem;
   max-width: 480px;
   margin: 0 auto 16px;
 }
 
 .secondary {
-  font-size: 1.1rem;
+  font-size: 1rem;
   color: $paragraph;
+  max-width: 520px;
+  margin: auto;
 }
 
 @media only screen and (min-width: 480px) {

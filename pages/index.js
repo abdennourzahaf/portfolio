@@ -1,8 +1,12 @@
 import Head from 'next/head';
 import Navbar from '../components/Navbar/Navbar';
 import Hero from '../containers/Hero/Hero';
+import Posts from '../containers/Posts/Posts';
 import Process from '../containers/Process/Process';
 import Projects from '../containers/Projects/Projects';
+import Services from '../containers/Services/Services';
+import Skills from '../containers/Skills/Skills';
+import Testimonials from '../containers/Testimonials/Testimonials';
 
 export default function Home() {
   return (
@@ -16,6 +20,10 @@ export default function Home() {
       <Hero />
       <Projects />
       <Process />
+      <Skills />
+      <Services />
+      <Testimonials />
+      <Posts />
     </>
   );
 }

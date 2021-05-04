@@ -7,10 +7,11 @@ import '@glidejs/glide/dist/css/glide.core.min.css';
 // import '@glidejs/glide/dist/css/glide.theme.min.css';
 import styles from './styles.module.scss';
 import SliderArrow from '../../components/SVG/SliderArrow';
+import SliderButton from '../../components/SliderButton/SliderButton';
 
 const Projects = () => {
   useEffect(() => {
-    const glide = new Glide('.glide', {
+    const glide = new Glide('#projects-slider', {
       type: 'slider',
       startAt: 0,
       perView: 2,
@@ -46,7 +47,7 @@ const Projects = () => {
         secondary='Some Of the best projects I have Developed'
       />
       <div className={styles.sliderContainer}>
-        <div className='glide'>
+        <div className='glide' id='projects-slider'>
           <div className={styles.leftOverlay}></div>
           <div className={styles.rightOverlay}></div>
           <div className='glide__track' data-glide-el='track'>
@@ -58,13 +59,15 @@ const Projects = () => {
               ))}
             </ul>
           </div>
-          <div class='glide__arrows' data-glide-el='controls'>
-            <button class='glide__arrow glide__arrow--left' data-glide-dir='<'>
-              <SliderArrow />
-            </button>
-            <button class='glide__arrow glide__arrow--right' data-glide-dir='>'>
-              <SliderArrow />
-            </button>
+          <div className='glide__arrows' data-glide-el='controls'>
+            <SliderButton
+              className='glide__arrow glide__arrow--left'
+              data-glide-dir='<'
+            />
+            <SliderButton
+              className='glide__arrow glide__arrow--right'
+              data-glide-dir='>'
+            />
           </div>
         </div>
       </div>

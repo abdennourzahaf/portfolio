@@ -54,11 +54,13 @@
   .leftOverlay {
     display: block;
   }
-
-  .rightOverlay {
-  }
-  .leftOverlay {
-  }
 }
 @media only screen and (min-width: 1200px) {
+  .rightOverlay {
+    width: 260px;
+  }
+
+  .leftOverlay {
+    width: 300px;
+  }
 }

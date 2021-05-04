@@ -14,7 +14,7 @@ const Process = () => {
       />
       <div className={'container ' + styles.cardsContainer}>
         {PROCESS_CARDS.map((card, index) => (
-          <ProcessCard {...card} number={'0' + (index + 1)} />
+          <ProcessCard {...card} number={'0' + (index + 1)} key={index} />
         ))}
         <img
           src='/assets/process-line.svg'
