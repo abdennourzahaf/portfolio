@@ -2,6 +2,8 @@ import React from 'react';
 
 const requireImage = require.context('../../public/assets', false, /\.png$/);
 
+const requireSVG = require.context('../../public/assets', false, /\.svg$/);
+
 const requireWebpImage = require.context(
   '../../public/assets?webp',
   false,
@@ -9,6 +11,8 @@ const requireWebpImage = require.context(
 );
 
 const OptimizedImage = ({ src, alt }) => {
+  if (/\.svg$/.test(src)) return <img src={requireSVG(`./${src}`)} alt={alt} />;
+
   return (
     <picture>
       <source srcSet={requireWebpImage(`./${src}`)} type='image/webp' />

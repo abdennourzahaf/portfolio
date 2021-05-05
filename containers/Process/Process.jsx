@@ -17,8 +17,8 @@ const Process = () => {
         {PROCESS_CARDS.map((card, index) => (
           <ProcessCard {...card} number={'0' + (index + 1)} key={index} />
         ))}
-        <img
-          src='/assets/process-line.svg'
+        <OptimizedImage
+          src='process-line.svg'
           alt='background'
           className={styles.bgLine}
         />

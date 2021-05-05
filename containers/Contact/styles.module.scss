@@ -184,6 +184,7 @@
 }
 
 .bgImage {
+  display: none;
   position: absolute;
   width: 240px;
   top: 50%;
@@ -213,6 +214,10 @@
   .formButton {
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .bgImage {
+    display: block;
   }
 }
 @media only screen and (min-width: 1024px) {
