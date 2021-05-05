@@ -79,6 +79,9 @@ const Contact = () => {
           </form>
         </div>
       </div>
+      <div className={styles.bgImage}>
+        <img src='/assets/form-bg.png' alt='background' />
+      </div>
     </section>
   );
 };

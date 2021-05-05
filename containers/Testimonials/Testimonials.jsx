@@ -5,6 +5,7 @@ import styles from './styles.module.scss';
 import { TESTIMONIALS } from '../../lib/data';
 import TestimonialCard from '../../components/TestimonialCard/TestimonialCard';
 import SliderButton from '../../components/SliderButton/SliderButton';
+import BackgroundPattern from '../../components/BackgroundPattern/BackgroundPattern';
 
 const brandsArray = [1, 2, 3, 4, 5];
 
@@ -108,6 +109,7 @@ const Testimonials = () => {
           </div>
         ))}
       </div>
+      <BackgroundPattern position='right' />
     </section>
   );
 };

@@ -1,0 +1,25 @@
+.container {
+  display: none;
+  flex-direction: column;
+  width: 100px;
+  position: absolute;
+  top: 0;
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  &.right {
+    right: 0;
+  }
+
+  &.left {
+    left: 0;
+  }
+}
+
+@media only screen and (min-width: 1260px) {
+  .container {
+    display: flex;
+  }
+}

@@ -4,6 +4,8 @@
   background-color: $background;
   padding: 60px 0px;
   border-top-left-radius: 100px;
+  position: relative;
+  overflow: hidden;
 }
 
 .accordionContainer {

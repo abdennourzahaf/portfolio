@@ -1,5 +1,6 @@
 import React from 'react';
 import Accordion from '../../components/Accordion/Accordion';
+import BackgroundPattern from '../../components/BackgroundPattern/BackgroundPattern';
 import SectionHeader from '../../components/SectionHeader/SectionHeader';
 import styles from './styles.module.scss';
 
@@ -14,6 +15,7 @@ const FAQ = () => {
       <div className={styles.accordionContainer + ' container'}>
         <Accordion />
       </div>
+      <BackgroundPattern position='left' />
     </section>
   );
 };

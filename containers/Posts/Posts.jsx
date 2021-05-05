@@ -6,6 +6,7 @@ import { POSTS } from '../../lib/data';
 
 import styles from './styles.module.scss';
 import Post from '../../components/Post/Post';
+import BackgroundPattern from '../../components/BackgroundPattern/BackgroundPattern';
 
 const Posts = () => {
   useEffect(() => {
@@ -48,6 +49,7 @@ const Posts = () => {
           </div>
         </div>
       </div>
+      <BackgroundPattern position='left' single />
     </section>
   );
 };
