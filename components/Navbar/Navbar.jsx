@@ -5,6 +5,7 @@ import styles from './styles.module.scss';
 import { MENU_ITEMS } from '../../lib/data';
 import PrimaryButton from '../Button/PrimaryButton/PrimaryButton';
 import MenuBurger from '../SVG/MenuBurger';
+import OptimizedImage from '../OptimizedImage/OptimizedImage';
 
 const Navbar = () => {
   const [isMobileNavOpen, setIsMobileNavOpen] = useState(false);
@@ -59,7 +60,7 @@ const Navbar = () => {
       <nav className={styles.nav}>
         <Link href='/'>
           <a className={styles.logo}>
-            <img src='/assets/navbar-logo.png' alt='' />
+            <OptimizedImage src='navbar-logo.png' alt='logo' />
           </a>
         </Link>
         <div className={styles.linksContainer}>

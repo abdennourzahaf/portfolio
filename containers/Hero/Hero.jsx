@@ -2,13 +2,14 @@ import Link from 'next/link';
 import React from 'react';
 import PrimaryButton from '../../components/Button/PrimaryButton/PrimaryButton';
 import SecondaryButton from '../../components/Button/SecondaryButton/SecondaryButton';
+import OptimizedImage from '../../components/OptimizedImage/OptimizedImage';
 import styles from './styles.module.scss';
 
 const Hero = () => {
   return (
     <section className={styles.section} id='about'>
       <div className={styles.bgLogo}>
-        <img src='/assets/r-3.png' alt='' />
+        <OptimizedImage src='r-3.png' alt='logo' />
       </div>
       <div className={styles.textContainer}>
         <div className={styles.textWrapper}>
@@ -17,7 +18,7 @@ const Hero = () => {
           <h3 className={styles.title}>Application Development Consultant</h3>
           <h4 className={styles.secondaryTitle}>
             <span className={styles.logo}>
-              <img src='/assets/logo.png' alt='logo' />
+              <OptimizedImage src='logo.png' alt='logo' />
             </span>
             Working as independent consultant
           </h4>
@@ -38,11 +39,11 @@ const Hero = () => {
           </div>
         </div>
         <div className={styles.smallImageContainer}>
-          <img src='/assets/hero-img-1.png' alt='' />
+          <OptimizedImage src='hero-img-1.png' />
         </div>
       </div>
       <div className={styles.imageContainer}>
-        <img src='/assets/hero-img-1.png' alt='' />
+        <OptimizedImage src='hero-img-1.png' />
       </div>
     </section>
   );

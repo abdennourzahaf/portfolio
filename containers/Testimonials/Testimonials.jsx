@@ -6,6 +6,7 @@ import { TESTIMONIALS } from '../../lib/data';
 import TestimonialCard from '../../components/TestimonialCard/TestimonialCard';
 import SliderButton from '../../components/SliderButton/SliderButton';
 import BackgroundPattern from '../../components/BackgroundPattern/BackgroundPattern';
+import OptimizedImage from '../../components/OptimizedImage/OptimizedImage';
 
 const brandsArray = [1, 2, 3, 4, 5];
 
@@ -75,8 +76,8 @@ const Testimonials = () => {
             <ul className='glide__slides'>
               {brandsArray.map(n => (
                 <li className='glide__slide' key={n}>
-                  <img
-                    src={`/assets/testimonial-brand-${n}.png`}
+                  <OptimizedImage
+                    src={`testimonial-brand-${n}.png`}
                     alt='testimonial-brand'
                   />
                 </li>
@@ -101,9 +102,9 @@ const Testimonials = () => {
       </div>
       <div className={styles.brandsContainer + ' container'}>
         {brandsArray.map(n => (
-          <div className={styles.brand}>
-            <img
-              src={`/assets/testimonial-brand-${n}.png`}
+          <div className={styles.brand} key={n}>
+            <OptimizedImage
+              src={`testimonial-brand-${n}.png`}
               alt='testimonial-brand'
             />
           </div>

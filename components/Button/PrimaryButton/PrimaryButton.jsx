@@ -2,7 +2,8 @@ import React from 'react';
 import LinkIcon from '../../SVG/LinkIcon';
 import styles from './styles.module.scss';
 
-const PrimaryButton = ({ label, block, ...restProps }) => {
+const PrimaryButton = React.forwardRef((props, ref) => {
+  const { label, block, ...restProps } = props;
   return (
     <a className={`${styles.button} ${block && styles.block}`} {...restProps}>
       {label}
@@ -11,6 +12,6 @@ const PrimaryButton = ({ label, block, ...restProps }) => {
       </span>
     </a>
   );
-};
+});
 
 export default PrimaryButton;

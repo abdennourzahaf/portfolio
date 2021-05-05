@@ -1,4 +1,5 @@
 import React from 'react';
+import OptimizedImage from '../OptimizedImage/OptimizedImage';
 import styles from './styles.module.scss';
 
 const ServicesCard = ({ title, description, imgSrc }) => {
@@ -7,7 +8,7 @@ const ServicesCard = ({ title, description, imgSrc }) => {
       <div className={styles.badgeContainer}>
         <div className={styles.badge}>
           <div className={styles.imgContainer}>
-            <img src={imgSrc} alt={title} />
+            <OptimizedImage src={imgSrc} alt={title} />
           </div>
         </div>
       </div>

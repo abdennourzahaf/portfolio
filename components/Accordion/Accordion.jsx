@@ -6,8 +6,8 @@ import styles from './styles.module.scss';
 const Accordion = () => {
   return (
     <div className={styles.container}>
-      {FAQ.map(item => (
-        <AccordionItem {...item} />
+      {FAQ.map((item, index) => (
+        <AccordionItem {...item} key={index} />
       ))}
     </div>
   );

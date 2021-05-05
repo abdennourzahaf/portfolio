@@ -1,5 +1,6 @@
 import React, { useRef } from 'react';
 import PrimaryButton from '../../components/Button/PrimaryButton/PrimaryButton';
+import OptimizedImage from '../../components/OptimizedImage/OptimizedImage';
 import DownArrowIcon from '../../components/SVG/DownArrowIcon';
 import EmailIcon from '../../components/SVG/EmailIcon';
 import styles from './styles.module.scss';
@@ -22,7 +23,7 @@ const Contact = () => {
           </p>
           <div className={styles.infoCard}>
             <div className={styles.imgContainer}>
-              <img src='/assets/form-image.png' alt='form-image' />
+              <OptimizedImage src='form-image.png' alt='form-image' />
             </div>
             <div className={styles.InfoContainer}>
               <p className={styles.secondary}>REPLY TIME</p>
@@ -59,8 +60,8 @@ const Contact = () => {
               <label htmlFor='email'>Email</label>
             </div>
             <div className={styles.formGroup}>
-              <select name='budget' id='budget'>
-                <option selected value='' disabled>
+              <select name='budget' id='budget' defaultValue=''>
+                <option value='' disabled>
                   Budget
                 </option>
                 <option value='< 5000'>&lt; 5000€</option>
@@ -80,7 +81,7 @@ const Contact = () => {
         </div>
       </div>
       <div className={styles.bgImage}>
-        <img src='/assets/form-bg.png' alt='background' />
+        <OptimizedImage src='r-3.png' alt='background' />
       </div>
     </section>
   );

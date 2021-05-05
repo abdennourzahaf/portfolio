@@ -1,4 +1,5 @@
 import React from 'react';
+import OptimizedImage from '../OptimizedImage/OptimizedImage';
 import styles from './styles.module.scss';
 
 const TestimonialCard = ({ quote, authorName, authorTitle, authorPicture }) => {
@@ -7,7 +8,7 @@ const TestimonialCard = ({ quote, authorName, authorTitle, authorPicture }) => {
       <p className={styles.quote}>{quote}</p>
       <div className={styles.author}>
         <div className={styles.authorPicture}>
-          <img src={authorPicture} alt={authorName} />
+          <OptimizedImage src={authorPicture} alt={authorName} />
         </div>
         <div className={styles.authorInfo}>
           <p className={styles.authorName}>{authorName}</p>
@@ -15,7 +16,7 @@ const TestimonialCard = ({ quote, authorName, authorTitle, authorPicture }) => {
         </div>
       </div>
       <div className={styles.quoteImg}>
-        <img src='/assets/quote.png' alt='quote' />
+        <OptimizedImage src='quote.png' alt='quote' />
       </div>
     </div>
   );

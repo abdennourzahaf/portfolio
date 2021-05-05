@@ -1,4 +1,5 @@
 import React from 'react';
+import OptimizedImage from '../../components/OptimizedImage/OptimizedImage';
 import ProcessCard from '../../components/ProcessCard/ProcessCard';
 import SectionHeader from '../../components/SectionHeader/SectionHeader';
 import { PROCESS_CARDS } from '../../lib/data';
@@ -23,10 +24,10 @@ const Process = () => {
         />
       </div>
       <div className={styles.bgShape1}>
-        <img src='/assets/bd-element-1.png' alt='background' />
+        <OptimizedImage src='bd-element-1.png' alt='background' />
       </div>
       <div className={styles.bgShape2}>
-        <img src='/assets/bd-element-2.png' alt='background' />
+        <OptimizedImage src='bd-element-2.png' alt='background' />
       </div>
     </section>
   );

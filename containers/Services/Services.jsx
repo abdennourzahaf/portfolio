@@ -1,4 +1,5 @@
 import React from 'react';
+import OptimizedImage from '../../components/OptimizedImage/OptimizedImage';
 import SectionHeader from '../../components/SectionHeader/SectionHeader';
 import ServicesCard from '../../components/ServicesCard/ServicesCard';
 import { SERVICES_CARDS } from '../../lib/data';
@@ -17,7 +18,7 @@ const Services = () => {
           <ServicesCard {...card} key={index} />
         ))}
         <div className={styles.redDots}>
-          <img src='/assets/bg-red-dots.png' alt='background' />
+          <OptimizedImage src='bg-red-dots.png' alt='background' />
         </div>
       </div>
     </section>

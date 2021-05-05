@@ -1,4 +1,5 @@
 import React from 'react';
+import OptimizedImage from '../OptimizedImage/OptimizedImage';
 import LinkIcon from '../SVG/LinkIcon';
 import styles from './styles.module.scss';
 
@@ -8,9 +9,9 @@ const Post = ({ title, excerpt, imgSrc, link }) => {
       <div className={styles.imageContainer}>
         <div className={styles.bg}></div>
         <div className={styles.orangeDots}>
-          <img src='/assets/bg-orange-dots.png' alt='background' />
+          <OptimizedImage src='bg-orange-dots.png' alt='background' />
         </div>
-        <img src={imgSrc} alt={title} />
+        <OptimizedImage src={imgSrc} alt={title} />
       </div>
       <div className={styles.textContainer}>
         <h2 className={styles.title}>{title}</h2>

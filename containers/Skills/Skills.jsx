@@ -1,6 +1,7 @@
 import React from 'react';
 import BackgroundPattern from '../../components/BackgroundPattern/BackgroundPattern';
 import PrimaryButton from '../../components/Button/PrimaryButton/PrimaryButton';
+import OptimizedImage from '../../components/OptimizedImage/OptimizedImage';
 import SkillsCard from '../../components/SkillsCard/SkillsCard';
 import { SKILLS_CARDS } from '../../lib/data';
 import styles from './styles.module.scss';
@@ -30,7 +31,7 @@ const Skills = () => {
           <div className={styles.column1}>
             <SkillsCard {...SKILLS_CARDS[0]} />
             <div className={styles.blackDots}>
-              <img src='/assets/bg-black-dots.png' alt='background' />
+              <OptimizedImage src='bg-black-dots.png' alt='background' />
             </div>
           </div>
           <div className={styles.column2}>
@@ -41,7 +42,7 @@ const Skills = () => {
               <SkillsCard {...SKILLS_CARDS[2]} />
             </div>
             <div className={styles.redDots}>
-              <img src='/assets/bg-red-dots.png' alt='background' />
+              <OptimizedImage src='bg-red-dots.png' alt='background' />
             </div>
           </div>
         </div>
