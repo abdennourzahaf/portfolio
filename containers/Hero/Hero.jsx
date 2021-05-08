@@ -39,11 +39,11 @@ const Hero = () => {
           </div>
         </div>
         <div className={styles.smallImageContainer}>
-          <OptimizedImage src='hero-img-1.png' />
+          <OptimizedImage src='hero-img-1.png' alt='picture of reda' />
         </div>
       </div>
       <div className={styles.imageContainer}>
-        <OptimizedImage src='hero-img-1.png' />
+        <OptimizedImage src='hero-img-1.png' alt='picture of reda' />
       </div>
     </section>
   );

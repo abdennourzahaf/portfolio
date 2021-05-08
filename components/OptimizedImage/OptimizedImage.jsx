@@ -1,8 +1,10 @@
 import React from 'react';
 
-const requireImage = require.context('../../public/assets', false, /\.png$/);
-
-const requireSVG = require.context('../../public/assets', false, /\.svg$/);
+const requireImage = require.context(
+  '../../public/assets',
+  false,
+  /\.(svg|png)$/,
+);
 
 const requireWebpImage = require.context(
   '../../public/assets?webp',
@@ -10,14 +12,15 @@ const requireWebpImage = require.context(
   /\.png$/,
 );
 
-const OptimizedImage = ({ src, alt }) => {
-  if (/\.svg$/.test(src)) return <img src={requireSVG(`./${src}`)} alt={alt} />;
+const OptimizedImage = ({ src, ...restProps }) => {
+  if (/\.svg$/.test(src))
+    return <img src={requireImage(`./${src}`)} {...restProps} />;
 
   return (
     <picture>
       <source srcSet={requireWebpImage(`./${src}`)} type='image/webp' />
       <source srcSet={requireImage(`./${src}`)} type='image/png' />
-      <img src={requireImage(`./${src}`)} alt={alt} />
+      <img src={requireImage(`./${src}`)} {...restProps} />
     </picture>
   );
 };

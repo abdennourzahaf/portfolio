@@ -20,7 +20,7 @@ const Footer = () => {
         </div>
         <div className={styles.subFooter}>
           <p className={styles.copyright}>
-            © 2021 All rights reserved. Reda-Alhourani.com
+            © {new Date().getFullYear()} All rights reserved. Reda-Alhourani.com
           </p>
           <div className={styles.subFooterLinks}>
             <a href='/' className={styles.imprintLink}>
