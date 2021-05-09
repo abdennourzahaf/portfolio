@@ -127,12 +127,14 @@
 
   &.active {
     & input,
+    & select,
     & textarea {
       @extend %input-active;
     }
   }
 
   & input,
+  & select,
   & textarea {
     width: 100%;
     padding: 8px 8px;
@@ -160,7 +162,7 @@
   & span::before {
     content: '';
     position: absolute;
-    bottom: 0;
+    bottom: -2px;
     left: 0;
     width: 0%;
     height: 2px;
@@ -169,13 +171,7 @@
   }
 
   & select {
-    padding: 8px 8px;
-    border: none;
-    background: none;
-    outline: none;
-    width: 100%;
     color: #9c9c9c;
-    font-size: 1rem;
     & option {
       color: #030203;
       font-weight: 500;

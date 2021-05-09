@@ -7,7 +7,7 @@ import styles from './styles.module.scss';
 
 const Services = () => {
   return (
-    <section className={styles.section}>
+    <section className={styles.section} id='services'>
       <SectionHeader
         title='services'
         primary='Ways I can help you'

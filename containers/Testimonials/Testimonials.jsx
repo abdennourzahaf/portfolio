@@ -19,6 +19,7 @@ const Testimonials = () => {
       startAt: 0,
       perView: 2,
       gap: 0,
+      bound: true,
       breakpoints: {
         767: {
           perView: 1,
@@ -41,7 +42,7 @@ const Testimonials = () => {
     brandsGlide.mount();
   }, []);
   return (
-    <section className={styles.section}>
+    <section className={styles.section} id='testimonials'>
       <SectionHeader
         title='good words'
         primary='What My Clients Say?'

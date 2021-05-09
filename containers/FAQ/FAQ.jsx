@@ -6,7 +6,7 @@ import styles from './styles.module.scss';
 
 const FAQ = () => {
   return (
-    <section className={styles.section}>
+    <section className={styles.section} id='faq'>
       <SectionHeader
         title='ASk ME'
         primary='Frequently asked questions'

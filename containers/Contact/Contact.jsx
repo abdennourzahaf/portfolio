@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React, { useState } from 'react';
 import PrimaryButton from '../../components/Button/PrimaryButton/PrimaryButton';
 import OptimizedImage from '../../components/OptimizedImage/OptimizedImage';
 import DownArrowIcon from '../../components/SVG/DownArrowIcon';
@@ -6,13 +6,17 @@ import EmailIcon from '../../components/SVG/EmailIcon';
 import styles from './styles.module.scss';
 
 const Contact = () => {
-  const inputRef = useRef(null);
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [budget, setBudget] = useState('');
+  const [content, setContent] = useState('');
+
   const handleSubmit = e => {
     e.preventDefault();
   };
 
   return (
-    <section className={styles.section}>
+    <section className={styles.section} id='contact'>
       <div className={styles.container + ' container'}>
         <div className={styles.textContainer}>
           <h2 className={styles.title}>Let’s Talk!</h2>
@@ -49,18 +53,42 @@ const Contact = () => {
         </div>
         <div className={styles.formContainer}>
           <form className={styles.form} onSubmit={handleSubmit}>
-            <div className={`${styles.formGroup}`}>
-              <input type='text' id='name' name='name' ref={inputRef} />
+            <div
+              className={`${styles.formGroup + (name && ' ' + styles.active)}`}>
+              <input
+                type='text'
+                id='name'
+                name='name'
+                value={name}
+                onChange={({ target }) => setName(target.value)}
+              />
               <span></span>
               <label htmlFor='name'>Name</label>
             </div>
-            <div className={styles.formGroup}>
-              <input type='email' id='email' name='email' />
+            <div
+              className={`${
+                styles.formGroup + (email && ' ' + styles.active)
+              }`}>
+              <input
+                type='email'
+                id='email'
+                name='email'
+                value={email}
+                onChange={({ target }) => setEmail(target.value)}
+              />
               <span></span>
               <label htmlFor='email'>Email</label>
             </div>
-            <div className={styles.formGroup}>
-              <select name='budget' id='budget' defaultValue=''>
+            <div
+              className={`${
+                styles.formGroup + (budget && ' ' + styles.active)
+              }`}>
+              <select
+                name='budget'
+                value={budget}
+                onChange={({ target }) => setBudget(target.value)}
+                id='budget'
+                defaultValue=''>
                 <option value='' disabled>
                   Budget
                 </option>
@@ -71,8 +99,17 @@ const Contact = () => {
               </select>
               <span></span>
             </div>
-            <div className={styles.formGroup}>
-              <textarea id='content' name='content' rows='5' />
+            <div
+              className={`${
+                styles.formGroup + (content && ' ' + styles.active)
+              }`}>
+              <textarea
+                id='content'
+                name='content'
+                value={content}
+                onChange={({ target }) => setContent(target.value)}
+                rows='5'
+              />
               <span></span>
               <label htmlFor='content'>Content</label>
             </div>
