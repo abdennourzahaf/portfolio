@@ -1,5 +1,4 @@
 import React from 'react';
-import BackgroundPattern from '../../components/BackgroundPattern/BackgroundPattern';
 import PrimaryButton from '../../components/Button/PrimaryButton/PrimaryButton';
 import OptimizedImage from '../../components/OptimizedImage/OptimizedImage';
 import SkillsCard from '../../components/SkillsCard/SkillsCard';
@@ -47,7 +46,6 @@ const Skills = () => {
           </div>
         </div>
       </div>
-      <BackgroundPattern position='left' />
     </section>
   );
 };

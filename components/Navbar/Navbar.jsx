@@ -49,18 +49,13 @@ const Navbar = () => {
           ))}
         </ul>
         <div className={styles.mobileSecondaryLiksContainer}>
-          <a href='/' className={styles.linkedin}>
-            in
-          </a>
-          <Link href='/' passHref>
-            <PrimaryButton label='Contact Us' />
-          </Link>
+          <PrimaryButton label='Say Hello' href='#contact' />
         </div>
       </nav>
       <nav className={styles.nav}>
         <Link href='/'>
           <a className={styles.logo}>
-            <OptimizedImage src='navbar-logo.png' alt='logo' />
+            <OptimizedImage src='logo.svg' alt='logo' />
           </a>
         </Link>
         <div className={styles.linksContainer}>
@@ -72,12 +67,7 @@ const Navbar = () => {
             ))}
           </ul>
           <div className={styles.secondaryLiksContainer}>
-            <a href='/' className={styles.linkedin}>
-              in
-            </a>
-            <Link href='/' passHref>
-              <PrimaryButton label='Contact Us' />
-            </Link>
+            <PrimaryButton label='Say Hello' href='#contact' />
           </div>
         </div>
         <button

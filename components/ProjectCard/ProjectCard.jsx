@@ -12,7 +12,7 @@ const ProjectCard = ({ title, description, link, imgSrc }) => {
       <div className={styles.textContainer}>
         <h3 className={styles.title}>{title}</h3>
         <p className={styles.description}>{description}</p>
-        <a href={link} className={styles.link}>
+        <a href={link} className={styles.link} target='_blank' rel='noreferrer'>
           Visit Live Site
           <span className={styles.icon}>
             <LinkIcon />

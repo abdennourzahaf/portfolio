@@ -2,15 +2,17 @@
 
 .section {
   display: flex;
+  align-items: center;
   margin-bottom: 120px;
+  position: relative;
 }
 
 .textContainer {
   font-family: 'Raleway', sans-serif;
-  background-color: #fff6f6;
+  background-color: #f5f6ff;
   display: flex;
   justify-content: center;
-  flex: 3;
+  width: 100%;
   align-items: center;
   padding: 136px 16px 48px;
   border-bottom-right-radius: 120px;
@@ -21,7 +23,7 @@
   flex-direction: column;
 }
 
-.smallImageContainer {
+.imageContainer {
   display: none;
   width: 50%;
   img {
@@ -54,16 +56,6 @@
   margin-bottom: 24px;
 }
 
-.secondaryTitle {
-  color: #373737;
-  font-size: 1.1rem;
-  font-weight: 600;
-  margin: 0;
-  margin-bottom: 24px;
-  display: flex;
-  align-items: center;
-}
-
 .logo {
   display: inline-block;
   width: 18px;
@@ -93,28 +85,6 @@
   }
 }
 
-.imageContainer {
-  display: none;
-  flex: 3;
-  img {
-    max-width: 100%;
-    height: auto;
-  }
-}
-
-.bgLogo {
-  display: none;
-  position: absolute;
-  right: 0;
-  top: 136px;
-  width: 300px;
-  z-index: -1;
-  img {
-    max-width: 100%;
-    height: auto;
-  }
-}
-
 @media only screen and (min-width: 480px) {
   .description {
     max-width: 480px;
@@ -131,27 +101,32 @@
   .textContainer {
     padding: 136px 40px 48px;
   }
-  .smallImageContainer {
+  .imageContainer {
     display: block;
   }
 }
 
 @media only screen and (min-width: 1024px) {
-  .smallImageContainer {
+  .imageContainer {
     width: 40%;
   }
 }
 
 @media only screen and (min-width: 1400px) {
-  .smallImageContainer {
-    display: none;
+  .imageContainer {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translate(-36%, -50%);
+    width: 480px;
   }
   .section {
     padding: 0 120px;
   }
 
   .textContainer {
-    padding: 200px 0px 160px 80px;
+    width: 60%;
+    padding: 200px 132px 160px 132px;
     margin-left: 60px;
     border-bottom-right-radius: 100vh;
     border-bottom-left-radius: 100vh;
@@ -169,20 +144,8 @@
     font-size: 1.5rem;
   }
 
-  .secondaryTitle {
-    font-size: 1.1rem;
-  }
-
   .description {
     font-size: 1rem;
-    max-width: 80%;
-  }
-
-  .imageContainer {
-    display: block;
-  }
-
-  .bgLogo {
-    display: block;
+    max-width: none;
   }
 }

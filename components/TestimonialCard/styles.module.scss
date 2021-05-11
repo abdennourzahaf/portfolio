@@ -10,46 +10,20 @@
 }
 
 .quote {
+  position: relative;
   font-style: italic;
   margin-bottom: 32px;
   color: #3e2f2f;
-}
-
-.author {
-  display: flex;
-  align-items: center;
-}
-
-.authorPicture {
-  max-width: 28%;
-  margin-right: 12px;
-  border-top-right-radius: 100vh;
-  border-bottom-right-radius: 100vh;
-  overflow: hidden;
-  img {
-    display: block;
-    max-width: 100%;
-    height: auto;
-  }
-}
-
-.authorName {
-  color: #bb1114;
-  font-weight: 700;
-  font-size: 1.16rem;
-  margin-bottom: 4px;
-}
-
-.authorTitle {
-  color: #3e2f2f;
-  font-size: 0.86rem;
+  z-index: 2;
 }
 
 .quoteImg {
   position: absolute;
+  display: block;
   right: 30px;
   bottom: 30px;
   width: 160px;
+  opacity: 0.1;
   img {
     max-width: 100%;
     height: auto;

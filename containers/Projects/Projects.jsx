@@ -4,35 +4,21 @@ import ProjectCard from '../../components/ProjectCard/ProjectCard';
 import SectionHeader from '../../components/SectionHeader/SectionHeader';
 import { PROJECTS } from '../../lib/data';
 import '@glidejs/glide/dist/css/glide.core.min.css';
-// import '@glidejs/glide/dist/css/glide.theme.min.css';
 import styles from './styles.module.scss';
-import SliderArrow from '../../components/SVG/SliderArrow';
 import SliderButton from '../../components/SliderButton/SliderButton';
 
 const Projects = () => {
   useEffect(() => {
     const glide = new Glide('#projects-slider', {
       type: 'slider',
-      startAt: 0,
-      perView: 2,
+      perView: 3,
       gap: 30,
       bound: true,
-      peek: 300,
       breakpoints: {
-        580: {
-          peek: 0,
+        767: {
           perView: 1,
         },
-        767: {
-          peek: 0,
-          perView: 2,
-        },
         1023: {
-          peek: 20,
-          perView: 2,
-        },
-        1199: {
-          peek: 200,
           perView: 2,
         },
       },
@@ -43,13 +29,11 @@ const Projects = () => {
     <section className={styles.section} id='projects'>
       <SectionHeader
         title='projects'
-        primary='Making Ideas Come to Life!'
-        secondary='Some Of the best projects I have Developed'
+        primary='Making Designs Come to Life!'
+        secondary="Here are a some of the projects I've worked on"
       />
-      <div className={styles.sliderContainer}>
+      <div className={styles.sliderContainer + ' container'}>
         <div className='glide' id='projects-slider'>
-          <div className={styles.leftOverlay}></div>
-          <div className={styles.rightOverlay}></div>
           <div className='glide__track' data-glide-el='track'>
             <ul className='glide__slides'>
               {PROJECTS.map((project, index) => (

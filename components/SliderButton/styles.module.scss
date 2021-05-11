@@ -16,4 +16,12 @@
     background-color: $white;
     color: $primary;
   }
+  &.dark {
+    color: $black;
+    transform: rotate(90deg);
+    &:hover {
+      color: $primary;
+      background-color: $black;
+    }
+  }
 }

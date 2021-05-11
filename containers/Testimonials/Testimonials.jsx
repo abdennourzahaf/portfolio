@@ -5,7 +5,6 @@ import styles from './styles.module.scss';
 import { TESTIMONIALS } from '../../lib/data';
 import TestimonialCard from '../../components/TestimonialCard/TestimonialCard';
 import SliderButton from '../../components/SliderButton/SliderButton';
-import BackgroundPattern from '../../components/BackgroundPattern/BackgroundPattern';
 import OptimizedImage from '../../components/OptimizedImage/OptimizedImage';
 
 const brandsArray = [1, 2, 3, 4, 5];
@@ -27,26 +26,13 @@ const Testimonials = () => {
       },
     });
     testimonialsGlide.mount();
-
-    const brandsGlide = new Glide('#brands-slider', {
-      type: 'slider',
-      startAt: 0,
-      perView: 1,
-      gap: 0,
-    });
-
-    brandsGlide.on(['run', 'swipe.end'], function () {
-      setActiveBullet(brandsGlide.index);
-    });
-
-    brandsGlide.mount();
   }, []);
   return (
     <section className={styles.section} id='testimonials'>
       <SectionHeader
         title='good words'
-        primary='What My Clients Say?'
-        secondary="Some of My Client's 5 Starts Feedback On different platforms"
+        primary='What My Clients Say'
+        secondary='Every client I’ve worked with has left a 5 stars review, here’s what they say'
       />
       <div className={styles.testimonialsSlider + ' container'}>
         <div className='glide' id='testimonials-slider'>
@@ -71,47 +57,6 @@ const Testimonials = () => {
           </div>
         </div>
       </div>
-      <div className={styles.brandsSlider + ' container'}>
-        <div className='glide' id='brands-slider'>
-          <div className='glide__track' data-glide-el='track'>
-            <ul className='glide__slides'>
-              {brandsArray.map(n => (
-                <li className='glide__slide' key={n}>
-                  <OptimizedImage
-                    src={`testimonial-brand-${n}.png`}
-                    alt='testimonial-brand'
-                  />
-                </li>
-              ))}
-            </ul>
-          </div>
-          <div className='glide__bullets' data-glide-el='controls[nav]'>
-            {brandsArray.map((_, index) => (
-              <button
-                key={index}
-                className={
-                  'glide__bullet' +
-                  (index === activeBullet ? ' glide__bullet--current' : '') +
-                  (index === activeBullet + 1 || index === activeBullet - 1
-                    ? ' glide__bullet--adjacent'
-                    : '')
-                }
-                data-glide-dir={`=${index}`}></button>
-            ))}
-          </div>
-        </div>
-      </div>
-      <div className={styles.brandsContainer + ' container'}>
-        {brandsArray.map(n => (
-          <div className={styles.brand} key={n}>
-            <OptimizedImage
-              src={`testimonial-brand-${n}.png`}
-              alt='testimonial-brand'
-            />
-          </div>
-        ))}
-      </div>
-      <BackgroundPattern position='right' />
     </section>
   );
 };

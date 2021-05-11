@@ -29,9 +29,13 @@ p {
 }
 
 #projects-slider {
+  .glide__slide {
+    padding: 0 12px;
+  }
   .glide__arrows {
     display: flex;
     justify-content: center;
+    margin-top: 40px;
   }
 
   .glide__arrow {
@@ -142,24 +146,6 @@ p {
   .container {
     max-width: 920px;
   }
-  #projects-slider {
-    .glide__arrow {
-      position: absolute;
-      top: 30%;
-      margin: 0;
-
-      &--right {
-        left: 120px;
-        transform: rotate(0deg);
-      }
-
-      &--left {
-        display: none;
-        right: 20px;
-        transform: rotate(180deg);
-      }
-    }
-  }
 
   #testimonials-slider {
     .glide__slide {
@@ -171,13 +157,5 @@ p {
 @media only screen and (min-width: 1200px) {
   .container {
     max-width: 1024px;
-  }
-
-  #projects-slider {
-    .glide__arrow {
-      &--right {
-        left: 220px;
-      }
-    }
   }
 }

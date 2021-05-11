@@ -31,12 +31,6 @@
   }
 }
 
-.phone {
-  color: $primary;
-  font-size: 1.4rem;
-  font-weight: 700;
-}
-
 .subFooter {
   display: flex;
   flex-direction: column;
@@ -45,35 +39,18 @@
   padding: 20px 0;
 }
 
+.logo {
+  width: 40px;
+  margin-bottom: 20px;
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
 .copyright {
   font-size: 0.9rem;
   margin-bottom: 8px;
-}
-
-.imprintLink {
-  font-size: 1.4rem;
-  margin-right: 32px;
-  font-weight: 700;
-}
-
-.linkedin {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  background-color: $primary;
-  color: $black;
-  border: 2px solid $primary;
-  border-radius: 50%;
-  transition: all 0.2s;
-  font-size: 1.6rem;
-  font-weight: 700;
-  height: 36px;
-  width: 36px;
-  margin-right: 16px;
-  &:hover {
-    color: $primary;
-    background-color: $black;
-  }
 }
 
 @media only screen and (min-width: 768px) {
@@ -89,13 +66,14 @@
     margin-bottom: 0;
   }
   .subFooter {
-    flex-direction: row;
-    justify-content: space-between;
+    // flex-direction: row;
+    // justify-content: space-between;
   }
   .copyright {
     margin-bottom: 0;
   }
 }
+
 @media only screen and (min-width: 1024px) {
   .container {
     flex-direction: row;
@@ -106,6 +84,4 @@
     font-size: 1rem;
     margin-bottom: 0;
   }
-}
-@media only screen and (min-width: 1200px) {
 }

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useRef, useState } from 'react';
 import PrimaryButton from '../../components/Button/PrimaryButton/PrimaryButton';
 import OptimizedImage from '../../components/OptimizedImage/OptimizedImage';
 import DownArrowIcon from '../../components/SVG/DownArrowIcon';
@@ -6,6 +6,8 @@ import EmailIcon from '../../components/SVG/EmailIcon';
 import styles from './styles.module.scss';
 
 const Contact = () => {
+  const inputRef = useRef(null);
+
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [budget, setBudget] = useState('');
@@ -20,14 +22,14 @@ const Contact = () => {
       <div className={styles.container + ' container'}>
         <div className={styles.textContainer}>
           <h2 className={styles.title}>Let’s Talk!</h2>
-          <h3 className={styles.subTitle}>So, Do we work together?</h3>
+          <h3 className={styles.subTitle}>Interested in working together?</h3>
           <p className={styles.description}>
-            If you have a Application, Saas or mobile app idea in mind or you
-            need some advice about product development, feel free to contact me.
+            If you have a design to build, a page to modify or you need some
+            advice about anything font-end related, feel free to contact me.
           </p>
           <div className={styles.infoCard}>
             <div className={styles.imgContainer}>
-              <OptimizedImage src='form-image.png' alt='form-image' />
+              <OptimizedImage src='avatar.svg' alt='form-image' />
             </div>
             <div className={styles.InfoContainer}>
               <p className={styles.secondary}>REPLY TIME</p>
@@ -61,6 +63,7 @@ const Contact = () => {
                 name='name'
                 value={name}
                 onChange={({ target }) => setName(target.value)}
+                ref={inputRef}
               />
               <span></span>
               <label htmlFor='name'>Name</label>
@@ -81,26 +84,6 @@ const Contact = () => {
             </div>
             <div
               className={`${
-                styles.formGroup + (budget && ' ' + styles.active)
-              }`}>
-              <select
-                name='budget'
-                value={budget}
-                onChange={({ target }) => setBudget(target.value)}
-                id='budget'
-                defaultValue=''>
-                <option value='' disabled>
-                  Budget
-                </option>
-                <option value='< 5000'>&lt; 5000€</option>
-                <option value='5000€ - 10000€'>5000€ - 10000€</option>
-                <option value='10000 - 30000€'>10000€ - 30000€</option>
-                <option value='> 30000'>&gt; 30000€</option>
-              </select>
-              <span></span>
-            </div>
-            <div
-              className={`${
                 styles.formGroup + (content && ' ' + styles.active)
               }`}>
               <textarea
@@ -114,11 +97,11 @@ const Contact = () => {
               <label htmlFor='content'>Content</label>
             </div>
             <PrimaryButton label='Submit' role='button' />
+            <div className={styles.bgImage}>
+              <OptimizedImage src='logo.svg' alt='background' />
+            </div>
           </form>
         </div>
-      </div>
-      <div className={styles.bgImage}>
-        <OptimizedImage src='r-3.png' alt='background' />
       </div>
     </section>
   );

@@ -1,4 +1,6 @@
 import React from 'react';
+import OptimizedImage from '../../components/OptimizedImage/OptimizedImage';
+import SliderButton from '../../components/SliderButton/SliderButton';
 import { MENU_ITEMS } from '../../lib/data';
 import styles from './styles.module.scss';
 
@@ -14,22 +16,17 @@ const Footer = () => {
               </li>
             ))}
           </ul>
-          <a href='tel:+49-178-188-0278' className={styles.phone}>
-            +49-178-188-0278
+          <a href='#about'>
+            <SliderButton dark />
           </a>
         </div>
         <div className={styles.subFooter}>
-          <p className={styles.copyright}>
-            © {new Date().getFullYear()} All rights reserved. Reda-Alhourani.com
-          </p>
-          <div className={styles.subFooterLinks}>
-            <a href='/' className={styles.imprintLink}>
-              Imprint
-            </a>
-            <a href='/' className={styles.linkedin}>
-              in
-            </a>
+          <div className={styles.logo}>
+            <OptimizedImage src='logo.svg' alt='logo' />
           </div>
+          <p className={styles.copyright}>
+            © {new Date().getFullYear()} All rights reserved. abdennourzahaf.me
+          </p>
         </div>
       </div>
     </footer>

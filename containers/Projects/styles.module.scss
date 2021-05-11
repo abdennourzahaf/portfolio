@@ -2,65 +2,19 @@
 
 .section {
   background-color: $background;
-  padding: 60px 8px;
-  border-top-left-radius: 100px;
+  padding: 60px 0px;
+  border-top-right-radius: 100px;
+  border-bottom-right-radius: 100px;
 }
 
 .sliderContainer {
   margin-top: 60px;
 }
 
-.rightOverlay,
-.leftOverlay {
-  display: none;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  height: 100%;
-  z-index: 1;
-}
-
-.rightOverlay {
-  right: 0;
-  width: 260px;
-  background-image: linear-gradient(
-    to left,
-    rgba(255, 246, 246, 0.7) 0%,
-    rgba(255, 246, 246, 0) 100%
-  );
-}
-
-.leftOverlay {
-  left: 0;
-  width: 200px;
-  background-image: linear-gradient(
-    to right,
-    rgba(255, 246, 246, 1) 90%,
-    rgba(255, 246, 246, 0)
-  );
-}
-
-@media only screen and (min-width: 480px) {
-}
-@media only screen and (min-width: 768px) {
-}
 @media only screen and (min-width: 1024px) {
   .section {
-    border-top-left-radius: 200px;
+    border-top-right-radius: 200px;
+    border-bottom-right-radius: 200px;
     padding: 60px 0px;
-  }
-
-  .rightOverlay,
-  .leftOverlay {
-    display: block;
-  }
-}
-@media only screen and (min-width: 1200px) {
-  .rightOverlay {
-    width: 260px;
-  }
-
-  .leftOverlay {
-    width: 300px;
   }
 }

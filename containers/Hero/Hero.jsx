@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import React from 'react';
+import Avatar from '../../components/Avatar/َAvatar';
 import PrimaryButton from '../../components/Button/PrimaryButton/PrimaryButton';
 import SecondaryButton from '../../components/Button/SecondaryButton/SecondaryButton';
 import OptimizedImage from '../../components/OptimizedImage/OptimizedImage';
@@ -8,42 +9,27 @@ import styles from './styles.module.scss';
 const Hero = () => {
   return (
     <section className={styles.section} id='about'>
-      <div className={styles.bgLogo}>
-        <OptimizedImage src='r-3.png' alt='logo' />
-      </div>
       <div className={styles.textContainer}>
         <div className={styles.textWrapper}>
           <h3 className={styles.greeting}>Hello, I’m</h3>
-          <h1 className={styles.name}>Reda Alhourani</h1>
-          <h3 className={styles.title}>Application Development Consultant</h3>
-          <h4 className={styles.secondaryTitle}>
-            <span className={styles.logo}>
-              <OptimizedImage src='logo.png' alt='logo' />
-            </span>
-            Working as independent consultant
-          </h4>
+          <h1 className={styles.name}>Abdennour Zahaf</h1>
+          <h3 className={styles.title}>Front-end web developer</h3>
           <p className={styles.description}>
-            I Developing and Mange high-quality Single Page Applications and
-            APIs in different industries. accourding to your expectations,
-            requirements. with the most modern and stable Tools and Technology.
-            I will be responsible for Project Requirement Understanding, Project
-            Flow, Development, Testing, Deploying, and maintenance.
+            I develop and manage high quality Web pages and User Interfaces
+            using various modern tools and technologies. I specialize in Single
+            page applications and static websites. Over the last two years, I
+            have worked on many Front-end projects and delivered the best
+            results, in terms of pages speed, code quality and client
+            satisfaction.
           </p>
           <div className={styles.buttonsContainer}>
-            <Link href='/' passHref>
-              <PrimaryButton label='Get Project Estimate' />
-            </Link>
-            <Link href='/' passHref>
-              <SecondaryButton label='View Portfolio' />
-            </Link>
+            <PrimaryButton label='Say Hello' href='#contact' />
+            <SecondaryButton label='View Portfolio' href='#projects' />
           </div>
         </div>
-        <div className={styles.smallImageContainer}>
-          <OptimizedImage src='hero-img-1.png' alt='picture of reda' />
+        <div className={styles.imageContainer}>
+          <Avatar />
         </div>
-      </div>
-      <div className={styles.imageContainer}>
-        <OptimizedImage src='hero-img-1.png' alt='picture of reda' />
       </div>
     </section>
   );

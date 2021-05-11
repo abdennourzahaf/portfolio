@@ -11,14 +11,14 @@ const Services = () => {
       <SectionHeader
         title='services'
         primary='Ways I can help you'
-        secondary='Have a look, some could be interesting to help you achieve your business goals or start that project you always wanted to do... Yes, that one!'
+        secondary='Have a look at some of the many services I offer.'
       />
       <div className={styles.cardsContainer + ' container'}>
         {SERVICES_CARDS.map((card, index) => (
           <ServicesCard {...card} key={index} />
         ))}
-        <div className={styles.redDots}>
-          <OptimizedImage src='bg-red-dots.png' alt='background' />
+        <div className={styles.dots}>
+          <OptimizedImage src='bg-dots.png' alt='background' />
         </div>
       </div>
     </section>
