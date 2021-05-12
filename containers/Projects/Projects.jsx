@@ -47,10 +47,12 @@ const Projects = () => {
             <SliderButton
               className='glide__arrow glide__arrow--left'
               data-glide-dir='<'
+              aria-label='previous slide'
             />
             <SliderButton
               className='glide__arrow glide__arrow--right'
               data-glide-dir='>'
+              aria-label='next slide'
             />
           </div>
         </div>

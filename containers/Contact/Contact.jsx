@@ -10,7 +10,6 @@ const Contact = () => {
 
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
-  const [budget, setBudget] = useState('');
   const [content, setContent] = useState('');
 
   const handleSubmit = e => {

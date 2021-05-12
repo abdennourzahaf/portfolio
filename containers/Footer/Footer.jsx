@@ -17,7 +17,7 @@ const Footer = () => {
             ))}
           </ul>
           <a href='#about'>
-            <SliderButton dark />
+            <SliderButton dark aria-label='go to top' />
           </a>
         </div>
         <div className={styles.subFooter}>
