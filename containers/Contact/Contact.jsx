@@ -34,13 +34,11 @@ const Contact = () => {
             <div className={styles.InfoContainer}>
               <p className={styles.secondary}>REPLY TIME</p>
               <p className={styles.primary}>Within 24 hours</p>
-              <a className={styles.email} href='mailto:reda@reda-alhourani.com'>
+              <a className={styles.email} href='mailto:zfnori@gmail.com'>
                 <span className={styles.emailIcon}>
                   <EmailIcon />
                 </span>
-                <span className={styles.emailText}>
-                  reda@reda-alhourani.com
-                </span>
+                <span className={styles.emailText}>zfnori@gmail.com</span>
               </a>
             </div>
           </div>
