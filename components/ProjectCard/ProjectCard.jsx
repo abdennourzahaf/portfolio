@@ -10,7 +10,7 @@ const ProjectCard = ({ title, description, link, imgSrc }) => {
         <OptimizedImage src={imgSrc} alt={title} />
       </div>
       <div className={styles.textContainer}>
-        <h3 className={styles.title}>{title}</h3>
+        <h4 className={styles.title}>{title}</h4>
         <p className={styles.description}>{description}</p>
         <a href={link} className={styles.link} target='_blank' rel='noreferrer'>
           Visit Live Site
