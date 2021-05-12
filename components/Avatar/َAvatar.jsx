@@ -1,23 +1,33 @@
-import React, { useContext } from 'react';
-// import { animated } from 'react-spring';
-// import PropsContext from '../../context/props';
+import React, { useContext, useEffect, useRef } from 'react';
+import { animated } from 'react-spring';
+import AvatarCenterContext from '../../contexts/AvatarCenter';
+import SpringContext from '../../contexts/Spring';
 import styles from './styles.module.scss';
 
-// const trans1 = (x, y) => `translate3d(${x}px,${y}px,0)`;
-// const trans2 = (x, y) => `translate3d(${x / 2}px,${y / 2}px,0)`;
+const trans1 = (x, y) => `translate3d(${x}px,${y}px,0)`;
+const trans2 = (x, y) => `translate3d(${x / 2}px,${y / 2}px,0)`;
 
 const Avatar = () => {
-  // const props = useContext(PropsContext);
+  const { xy } = useContext(SpringContext);
+  const { setCenter } = useContext(AvatarCenterContext);
+
+  useEffect(() => {
+    let { left, width, top, height } = ref.current.getBoundingClientRect();
+    setCenter({ x: left + width / 2, y: top + height / 2 });
+  }, []);
+
+  const ref = useRef(null);
+
   return (
-    // <animated.svg
-    <svg
-      // style={{ transform: props.xy.interpolate(trans2) }}
+    <animated.svg
+      style={{ transform: xy.to(trans2) }}
       width='264'
       height='280'
       viewBox='0 0 264 280'
       fill='none'
       xmlns='http://www.w3.org/2000/svg'
-      className={styles.avatar}>
+      className={styles.avatar}
+      ref={ref}>
       <mask
         id='mask0'
         mask-type='alpha'
@@ -131,11 +141,7 @@ const Avatar = () => {
             fill='white'
           />
         </mask>
-        {/* <animated.g */}
-        <g
-          mask='url(#mask4)'
-          // style={{ transform: props.xy.interpolate(trans1) }}
-        >
+        <animated.g mask='url(#mask4)' style={{ transform: xy.to(trans1) }}>
           <path
             fillRule='evenodd'
             clipRule='evenodd'
@@ -155,46 +161,46 @@ const Avatar = () => {
             d='M136.466 179.284C142.541 179.284 147.466 174.36 147.466 168.284C147.466 162.209 142.541 157.284 136.466 157.284C130.391 157.284 125.466 162.209 125.466 168.284C125.466 174.36 130.391 179.284 136.466 179.284Z'
             fill='#FF4F6D'
           />
-        </g>
-        <path
-          // <animated.path
-          // style={{ transform: props.xy.interpolate(trans1) }}
+        </animated.g>
+        {/* <path */}
+        <animated.path
+          style={{ transform: xy.to(trans1) }}
           fillRule='evenodd'
           clipRule='evenodd'
           d='M119.466 129.284C119.466 133.703 124.838 137.284 131.466 137.284C138.093 137.284 143.466 133.703 143.466 129.284'
           fill='black'
           fillOpacity='0.16'
         />
-        <path
-          // <animated.path
-          // style={{ transform: props.xy.interpolate(trans1) }}
+        {/* <path */}
+        <animated.path
+          style={{ transform: xy.to(trans1) }}
           fillRule='evenodd'
           clipRule='evenodd'
           d='M91.626 111.732C93.4725 107.933 97.6302 105.284 102.463 105.284C107.279 105.284 111.425 107.914 113.281 111.692C113.833 112.814 113.048 113.732 112.256 113.052C109.805 110.944 106.325 109.628 102.463 109.628C98.723 109.628 95.3396 110.863 92.9034 112.856C92.0126 113.585 91.0859 112.843 91.626 111.732Z'
           fill='black'
           fillOpacity='0.6'
         />
-        <path
-          // <animated.path
-          // style={{ transform: props.xy.interpolate(trans1) }}
+        {/* <path */}
+        <animated.path
+          style={{ transform: xy.to(trans1) }}
           fillRule='evenodd'
           clipRule='evenodd'
           d='M149.626 111.732C151.472 107.933 155.63 105.284 160.463 105.284C165.28 105.284 169.425 107.914 171.281 111.692C171.833 112.814 171.048 113.732 170.256 113.052C167.805 110.944 164.325 109.628 160.463 109.628C156.723 109.628 153.34 110.863 150.903 112.856C150.013 113.585 149.086 112.843 149.626 111.732Z'
           fill='black'
           fillOpacity='0.6'
         />
-        <path
-          // <animated.path
-          // style={{ transform: props.xy.interpolate(trans1) }}
+        {/* <path */}
+        <animated.path
+          style={{ transform: xy.to(trans1) }}
           fillRule='evenodd'
           clipRule='evenodd'
           d='M102.013 87.4329C96.2062 87.7012 86.8181 91.9208 87.06 97.7767C87.068 97.9684 87.3495 98.0525 87.4871 97.9051C90.242 94.9458 109.802 91.9554 116.692 93.5401C117.323 93.6853 117.802 93.0633 117.402 92.6139C113.98 88.7657 107.216 87.1875 102.013 87.4329Z'
           fill='black'
           fillOpacity='0.6'
         />
-        <path
-          // <animated.path
-          // style={{ transform: props.xy.interpolate(trans1) }}
+        {/* <path */}
+        <animated.path
+          style={{ transform: xy.to(trans1) }}
           fillRule='evenodd'
           clipRule='evenodd'
           d='M161.918 87.4329C167.725 87.7012 177.114 91.9208 176.872 97.7767C176.864 97.9684 176.582 98.0525 176.445 97.9051C173.69 94.9458 154.129 91.9554 147.24 93.5401C146.609 93.6853 146.13 93.0633 146.529 92.6139C149.952 88.7657 156.716 87.1875 161.918 87.4329Z'
@@ -238,7 +244,7 @@ const Avatar = () => {
           </g>
         </g>
       </g>
-    </svg>
+    </animated.svg>
   );
 };
 
