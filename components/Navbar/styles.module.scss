@@ -34,7 +34,7 @@
 
 .logo {
   width: 40px;
-  margin-right: 200px;
+  margin-right: auto;
   img {
     max-width: 100%;
     height: auto;
@@ -149,9 +149,12 @@
   .nav {
     padding: 40px;
   }
+  .logo {
+    margin-right: 200px;
+  }
 }
 @media only screen and (min-width: 1400px) {
   .logo {
-    margin-right: 16vw;
+    margin-right: 17vw;
   }
 }
