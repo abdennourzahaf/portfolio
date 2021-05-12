@@ -72,7 +72,8 @@ const Navbar = () => {
         </div>
         <button
           className={styles.burger}
-          onClick={() => setIsMobileNavOpen(true)}>
+          onClick={() => setIsMobileNavOpen(true)}
+          aria-label='open navigation'>
           <MenuBurger />
         </button>
       </nav>

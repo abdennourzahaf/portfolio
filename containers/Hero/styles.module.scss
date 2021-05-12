@@ -4,22 +4,22 @@
   display: flex;
   align-items: center;
   margin-bottom: 120px;
-  position: relative;
 }
 
 .textContainer {
   font-family: 'Raleway', sans-serif;
   background-color: #f5f6ff;
-  display: flex;
-  justify-content: center;
+  display: inline-flex;
   width: 100%;
+  justify-content: center;
   align-items: center;
   padding: 136px 16px 48px;
   border-bottom-right-radius: 120px;
+  position: relative;
 }
 
 .textWrapper {
-  display: flex;
+  display: inline-flex;
   flex-direction: column;
 }
 
@@ -74,6 +74,7 @@
   font-weight: 400;
   margin: 0;
   margin-bottom: 8px;
+  max-width: 480px;
 }
 
 .buttonsContainer {
@@ -87,9 +88,6 @@
 }
 
 @media only screen and (min-width: 480px) {
-  .description {
-    max-width: 480px;
-  }
   .buttonsContainer {
     flex-direction: row;
     a {
@@ -118,15 +116,15 @@
     position: absolute;
     right: 0;
     top: 50%;
-    transform: translate(-36%, -50%);
-    width: 480px;
+    transform: translate(80%, -50%);
+    width: 30vw;
   }
   .section {
-    padding: 0 120px;
+    padding: 0 12vw;
   }
 
   .textContainer {
-    width: 60%;
+    width: fit-content;
     padding: 200px 132px 160px 132px;
     margin-left: 60px;
     border-bottom-right-radius: 100vh;
@@ -147,6 +145,5 @@
 
   .description {
     font-size: 1rem;
-    max-width: none;
   }
 }
