@@ -17,9 +17,9 @@ const Contact = () => {
   };
 
   return (
-    <section className={styles.section} id='contact'>
-      <div className={styles.container + ' container'}>
-        <div className={styles.textContainer}>
+    <section className='pt-24 px-4 pb-16' id='contact'>
+      <div className='container flex flex-col lg:flex-row lg:w-full'>
+        <div className='lg:w-1/2'>
           <h2 className={styles.title}>Let’s Talk!</h2>
           <h3 className={styles.subTitle}>Interested in working together?</h3>
           <p className={styles.description}>

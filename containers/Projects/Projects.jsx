@@ -4,7 +4,6 @@ import ProjectCard from '../../components/ProjectCard/ProjectCard';
 import SectionHeader from '../../components/SectionHeader/SectionHeader';
 import { PROJECTS } from '../../lib/data';
 import '@glidejs/glide/dist/css/glide.core.min.css';
-import styles from './styles.module.scss';
 import SliderButton from '../../components/SliderButton/SliderButton';
 
 const Projects = () => {
@@ -26,13 +25,15 @@ const Projects = () => {
     glide.mount();
   });
   return (
-    <section className={styles.section} id='projects'>
+    <section
+      className='bg-primary-light py-16 rounded-tr-xl rounded-br-xl lg:rounded-tr-2xl lg:rounded-br-2xl'
+      id='projects'>
       <SectionHeader
         title='projects'
         primary='Making Designs Come to Life!'
         secondary="Here are a some of the projects I've worked on"
       />
-      <div className={styles.sliderContainer + ' container'}>
+      <div className='container mt-16'>
         <div className='glide' id='projects-slider'>
           <div className='glide__track' data-glide-el='track'>
             <ul className='glide__slides'>

@@ -1,17 +1,11 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 import Glide from '@glidejs/glide';
 import SectionHeader from '../../components/SectionHeader/SectionHeader';
-import styles from './styles.module.scss';
 import { TESTIMONIALS } from '../../lib/data';
 import TestimonialCard from '../../components/TestimonialCard/TestimonialCard';
 import SliderButton from '../../components/SliderButton/SliderButton';
-import OptimizedImage from '../../components/OptimizedImage/OptimizedImage';
-
-const brandsArray = [1, 2, 3, 4, 5];
 
 const Testimonials = () => {
-  const [activeBullet, setActiveBullet] = useState(0);
-
   useEffect(() => {
     const testimonialsGlide = new Glide('#testimonials-slider', {
       type: 'slider',
@@ -28,13 +22,15 @@ const Testimonials = () => {
     testimonialsGlide.mount();
   }, []);
   return (
-    <section className={styles.section} id='testimonials'>
+    <section
+      className='bg-primary-light py-16 rounded-tl-xl relative overflow-hidden xl:rounded-tl-full xl:rounded-bl-full'
+      id='testimonials'>
       <SectionHeader
         title='good words'
         primary='What My Clients Say'
         secondary='Every client I’ve worked with has left a 5 stars review, here’s what they say'
       />
-      <div className={styles.testimonialsSlider + ' container'}>
+      <div className='container mt-6'>
         <div className='glide' id='testimonials-slider'>
           <div className='glide__track' data-glide-el='track'>
             <ul className='glide__slides'>

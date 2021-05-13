@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .transition-padding {
+    transition: padding 0.2s;
+  }
+  .transition-color {
+    transition: color 0.2s;
+  }
+  .transition-bg {
+    transition: background-color 0.2s;
+  }
+  .transition-opacity {
+    transition: opacity 0.2s;
+  }
+  .transition-trans {
+    transition: transform 0.3s;
+  }
+  .shadow-bottom {
+    box-shadow: 0 2px 2px -2px rgba(0, 0, 0, 0.2);
+  }
+  .transform-dots {
+    transform: translate(-40%, -190%);
+  }
+
+  @variants responsive {
+    .w-screen-30 {
+      width: 30vw;
+    }
+    .w-screen-40 {
+      width: 40vw;
+    }
+    .w-screen-65 {
+      width: 65vw;
+    }
+    .w-screen-80 {
+      width: 80vw;
+    }
+    .w-fit {
+      width: fit-content;
+    }
+    .mr-screen-17 {
+      margin-right: 17vw;
+    }
+    .px-screen-12 {
+      padding-right: 12vw;
+      padding-left: 12vw;
+    }
+    .transform-avatar {
+      transform: translate(80%, -50%);
+    }
+    .transform-dots-lg {
+      transform: translate(-50%, -50%);
+    }
+  }
+}
