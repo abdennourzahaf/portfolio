@@ -25,7 +25,7 @@ const Avatar = () => {
       viewBox='0 0 264 280'
       fill='none'
       xmlns='http://www.w3.org/2000/svg'
-      className='w-full'
+      className='w-full h-auto'
       ref={ref}>
       <mask
         id='mask0'

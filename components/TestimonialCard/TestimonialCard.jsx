@@ -1,14 +1,13 @@
 import React from 'react';
 import OptimizedImage from '../OptimizedImage/OptimizedImage';
-import styles from './styles.module.scss';
 
 const TestimonialCard = ({ quote }) => {
   return (
-    <div className={styles.container}>
-      <div className={styles.quoteImg}>
+    <div className='relative bg-gray-light rounded-30 p-8 shadow-testimonial'>
+      <div className='absolute block right-8 bottom-8 w-40 opacity-5'>
         <OptimizedImage src='quote.png' alt='quote' />
       </div>
-      <p className={styles.quote}>{quote}</p>
+      <p className='relative italic mb-8 z-10 text-text'>{quote}</p>
     </div>
   );
 };

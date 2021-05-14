@@ -44,7 +44,7 @@ const Navbar = () => {
         className={`flex flex-col z-10 absolute right-0 h-screen bg-gray-light py-8 px-5 transform transition-transform w-screen-80 sm:w-screen-65 md:w-screen-40 lg:hidden ${
           isMobileNavOpen ? 'translate-x-0 ' : 'translate-x-full '
         }`}>
-        <ul className='flex flex-col items-center font-semibold m-auto text-xl'>
+        <ul className='flex flex-col items-center font-semibold m-auto font-size-1-2'>
           {MENU_ITEMS.map(({ label, href }, index) => (
             <li
               className='my-4 transition-color hover:text-primary'

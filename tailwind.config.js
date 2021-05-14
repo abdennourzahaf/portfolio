@@ -38,6 +38,7 @@ module.exports = {
       DEFAULT: '4px',
       md: '0.375rem',
       lg: '0.5rem',
+      30: '30px',
       xl: '120px',
       '2xl': '200px',
       full: '9999px',
@@ -57,7 +58,11 @@ module.exports = {
       '-1': -1,
       auto: 'auto',
     },
-    extend: {},
+    extend: {
+      spacing: {
+        34: '8.5rem',
+      },
+    },
   },
   variants: {
     extend: { translate: ['group-hover'] },

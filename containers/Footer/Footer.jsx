@@ -25,7 +25,7 @@ const Footer = () => {
           <div className='w-10 mb-5'>
             <OptimizedImage src='logo.svg' alt='logo' />
           </div>
-          <p className='mb-2 md:mb-0'>
+          <p className='font-size-0-92 mb-2 md:mb-0'>
             © {new Date().getFullYear()} All rights reserved. abdennourzahaf.me
           </p>
         </div>

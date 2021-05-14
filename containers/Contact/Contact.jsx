@@ -20,13 +20,13 @@ const Contact = () => {
     <section className='pt-24 px-4 pb-16' id='contact'>
       <div className='container flex flex-col lg:flex-row lg:w-full'>
         <div className='lg:w-1/2'>
-          <h2 className='text-4xl mb-4 text-text-dark md:text-5xl'>
+          <h2 className='font-size-2 font-bold mb-4 leading-none text-text-dark md:text-5xl'>
             Let’s Talk!
           </h2>
-          <h3 className='text-xl font-normal mb-6 text-text-light md:text-3xl'>
+          <h3 className='font-size-1-3 font-normal mb-6 text-text-light md:text-3xl'>
             Interested in working together?
           </h3>
-          <p className='text-sm mb-8 text-text md:pr-28'>
+          <p className='mb-8 text-text md:pr-28'>
             If you have a design to build, a page to modify or you need some
             advice about anything font-end related, feel free to contact me.
           </p>
