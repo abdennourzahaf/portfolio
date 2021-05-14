@@ -1,7 +1,6 @@
 import React from 'react';
 import Avatar from '../../components/Avatar/َAvatar';
-import PrimaryButton from '../../components/Button/PrimaryButton/PrimaryButton';
-import SecondaryButton from '../../components/Button/SecondaryButton/SecondaryButton';
+import Button from '../../components/Button/Button';
 
 const Hero = () => {
   return (
@@ -17,7 +16,7 @@ const Hero = () => {
           <h3 className='text-gray-dark text-xl font-semibold mb-2 order-first 2xl:text-2xl'>
             Hello, I’m
           </h3>
-          <p className='font-roboto text-gray text-base font-normal mb-2 max-w-md'>
+          <p className='font-roboto text-text text-base font-normal mb-2 max-w-md'>
             I develop and manage high quality Web pages and User Interfaces
             using various modern tools and technologies. I specialize in Single
             page applications and static websites. Over the last two years, I
@@ -26,12 +25,13 @@ const Hero = () => {
             satisfaction.
           </p>
           <div className='font-roboto inline-flex flex-col sm:flex-row'>
-            <PrimaryButton
+            <Button
               label='Say Hello'
               href='#contact'
               className='my-1 sm:mb-0 sm:mt-8 sm:mr-4'
             />
-            <SecondaryButton
+            <Button
+              secondary
               label='View Portfolio'
               href='#projects'
               className='my-1 sm:mb-0 sm:mt-8 sm:mr-4'

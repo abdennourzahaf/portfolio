@@ -2,7 +2,6 @@ import React, { useContext, useEffect, useRef } from 'react';
 import { animated } from 'react-spring';
 import AvatarCenterContext from '../../contexts/AvatarCenter';
 import SpringContext from '../../contexts/Spring';
-import styles from './styles.module.scss';
 
 const trans1 = (x, y) => `translate3d(${x}px,${y}px,0)`;
 const trans2 = (x, y) => `translate3d(${x / 2}px,${y / 2}px,0)`;
@@ -26,7 +25,7 @@ const Avatar = () => {
       viewBox='0 0 264 280'
       fill='none'
       xmlns='http://www.w3.org/2000/svg'
-      className={styles.avatar}
+      className='w-full'
       ref={ref}>
       <mask
         id='mask0'
@@ -41,12 +40,12 @@ const Avatar = () => {
           fill='white'
         />
       </mask>
-      <g mask='url(#mask0)'>
+      <g mask='url(#mask0)' className='text-primary'>
         <path
           d='M132 280C198.274 280 252 226.274 252 160C252 93.7258 198.274 40 132 40C65.7258 40 12 93.7258 12 160C12 226.274 65.7258 280 132 280Z'
           fill='#E6E6E6'
         />
-        <path d='M252 40H12V280H252V40Z' className={styles.circle} />
+        <path d='M252 40H12V280H252V40Z' className='fill-current' />
       </g>
       <mask
         id='mask1'

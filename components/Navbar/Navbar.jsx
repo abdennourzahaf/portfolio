@@ -2,9 +2,9 @@ import React, { useEffect, useState } from 'react';
 import Link from 'next/link';
 
 import { MENU_ITEMS } from '../../lib/data';
-import PrimaryButton from '../Button/PrimaryButton/PrimaryButton';
 import MenuBurger from '../SVG/MenuBurger';
 import OptimizedImage from '../OptimizedImage/OptimizedImage';
+import Button from '../Button/Button';
 
 const Navbar = () => {
   const [isMobileNavOpen, setIsMobileNavOpen] = useState(false);
@@ -54,7 +54,7 @@ const Navbar = () => {
           ))}
         </ul>
         <div className='flex justify-center'>
-          <PrimaryButton label='Say Hello' href='#contact' />
+          <Button label='Say Hello' href='#contact' />
         </div>
       </nav>
       <nav
@@ -77,7 +77,7 @@ const Navbar = () => {
             ))}
           </ul>
           <div className='flex items-center'>
-            <PrimaryButton label='Say Hello' href='#contact' />
+            <Button label='Say Hello' href='#contact' />
           </div>
         </div>
         <button

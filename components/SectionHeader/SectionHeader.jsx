@@ -1,12 +1,15 @@
 import React from 'react';
-import styles from './styles.module.scss';
 
 const SectionHeader = ({ title, primary, secondary }) => {
   return (
-    <div className={styles.container}>
-      <h2 className={styles.title}>{title}</h2>
-      <h3 className={styles.primary}>{primary}</h3>
-      <p className={styles.secondary}>{secondary}</p>
+    <div className='text-center px-6'>
+      <h2 className='text-xl uppercase text-primary mb-4 letter-spacing-1'>
+        {title}
+      </h2>
+      <h3 className='text-text-dark capitalize font-bold text-4xl max-w-md mx-auto mb-4'>
+        {primary}
+      </h3>
+      <p className='text-text max-w-lg mx-auto'>{secondary}</p>
     </div>
   );
 };

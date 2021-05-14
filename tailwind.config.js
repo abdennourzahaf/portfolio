@@ -8,7 +8,8 @@ module.exports = {
   theme: {
     colors: {
       primary: { light: '#f5f6ff', DEFAULT: '#4758fc', dark: '#3644cd' },
-      gray: { light: '#ffffff', DEFAULT: '#3e2f2f', dark: '#000000' },
+      gray: { light: '#ffffff', DEFAULT: '#c2c2c2', dark: '#000000' },
+      text: { light: '#0e1317', DEFAULT: '#3e2f2f', dark: '#030203' },
     },
     screens: {
       sm: '480px',
@@ -59,7 +60,7 @@ module.exports = {
     extend: {},
   },
   variants: {
-    extend: {},
+    extend: { translate: ['group-hover'] },
   },
   plugins: [],
 };
