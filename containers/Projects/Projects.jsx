@@ -38,20 +38,22 @@ const Projects = () => {
           <div className='glide__track' data-glide-el='track'>
             <ul className='glide__slides'>
               {PROJECTS.map((project, index) => (
-                <li className='glide__slide' key={index}>
+                <li className='glide__slide px-3' key={index}>
                   <ProjectCard {...project} />
                 </li>
               ))}
             </ul>
           </div>
-          <div className='glide__arrows' data-glide-el='controls'>
+          <div
+            className='glide__arrows flex justify-center pt-10'
+            data-glide-el='controls'>
             <SliderButton
-              className='glide__arrow glide__arrow--left'
+              className='glide__arrow glide__arrow--left mx-2'
               data-glide-dir='<'
               aria-label='previous slide'
             />
             <SliderButton
-              className='glide__arrow glide__arrow--right'
+              className='glide__arrow glide__arrow--right mx-2 transform rotate-180'
               data-glide-dir='>'
               aria-label='next slide'
             />

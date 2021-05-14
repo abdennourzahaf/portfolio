@@ -35,20 +35,22 @@ const Testimonials = () => {
           <div className='glide__track' data-glide-el='track'>
             <ul className='glide__slides'>
               {TESTIMONIALS.map((testimonial, index) => (
-                <li className='glide__slide' key={index}>
+                <li className='glide__slide p-8' key={index}>
                   <TestimonialCard {...testimonial} />
                 </li>
               ))}
             </ul>
           </div>
-          <div className='glide__arrows' data-glide-el='controls'>
+          <div
+            className='glide__arrows flex justify-center'
+            data-glide-el='controls'>
             <SliderButton
-              className='glide__arrow glide__arrow--left'
+              className='glide__arrow mx-2 glide__arrow--left'
               data-glide-dir='<'
               aria-label='previous slide'
             />
             <SliderButton
-              className='glide__arrow glide__arrow--right'
+              className='glide__arrow mx-2 glide__arrow--right transform rotate-180'
               data-glide-dir='>'
               aria-label='next slide'
             />
