@@ -44,7 +44,10 @@ export default function Home() {
               content='Front-End developer portfolio'
             />
             <link rel='icon' href='/favicon.ico' />
-            <meta property='og:image' content='https://ibb.co/RTdzkLS' />
+            <meta
+              property='og:image'
+              content='https://i.ibb.co/1Gj8tHn/Frame-1.png'
+            />
             <meta property='og:type' content='website' />
             <meta property='og:url' content='https://abdennourzahaf.me/' />
           </Head>
