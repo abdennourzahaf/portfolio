@@ -40,6 +40,7 @@ export default function Home() {
             <title>Abdennour Zahaf | Front-end developer</title>
             <meta name='description' content='Front-end developer portfolio' />
             <link rel='icon' href='/favicon.ico' />
+            <meta property='og:image' content='https://ibb.co/RTdzkLS' />
           </Head>
           <Navbar />
           <main>
