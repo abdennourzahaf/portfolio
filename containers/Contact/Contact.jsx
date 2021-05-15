@@ -54,7 +54,7 @@ const Contact = () => {
         </div>
         <div className='max-w-xl lg:w-1/2'>
           <form
-            name='contact'
+            name='portfolio contact'
             method='POST'
             data-netlify='true'
             className='w-full relative'>
