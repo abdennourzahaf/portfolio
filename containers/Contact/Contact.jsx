@@ -56,6 +56,7 @@ const Contact = () => {
           <form
             name='portfolio contact'
             method='POST'
+            enctype='application/x-www-form-urlencoded'
             data-netlify='true'
             className='w-full relative'>
             <div
