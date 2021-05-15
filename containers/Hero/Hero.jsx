@@ -25,17 +25,20 @@ const Hero = () => {
             satisfaction.
           </p>
           <div className='font-roboto inline-flex flex-col sm:flex-row'>
-            <Button
-              label='Say Hello'
-              href='#contact'
-              className='my-1 sm:mb-0 sm:mt-8 sm:mr-4'
-            />
-            <Button
-              secondary
-              label='View Portfolio'
-              href='#projects'
-              className='my-1 sm:mb-0 sm:mt-8 sm:mr-4'
-            />
+            <a href='#contact'>
+              <Button
+                label='Say Hello'
+                href='#contact'
+                className='my-1 sm:mb-0 sm:mt-8 sm:mr-4'
+              />
+            </a>
+            <a href='#projects'>
+              <Button
+                secondary
+                label='View Portfolio'
+                className='my-1 sm:mb-0 sm:mt-8 sm:mr-4'
+              />
+            </a>
           </div>
         </div>
         <div className='hidden w-6/12 md:block lg:w-5/12 2xl:absolute 2xl:right-0 2xl:top-1/2 2xl:transform-avatar 2xl:w-screen-30'>

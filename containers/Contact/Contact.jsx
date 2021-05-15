@@ -101,7 +101,7 @@ const Contact = () => {
               <span></span>
               <label htmlFor='content'>Content</label>
             </div>
-            <Button label='Submit' role='button' />
+            <Button label='Submit' />
             <div className='hidden absolute h-60 top-1/2 right-0 -z-1 opacity-10 transform translate-x-3/4 -translate-y-3/4 md:block'>
               <OptimizedImage
                 src='logo.svg'
