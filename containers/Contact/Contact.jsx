@@ -12,10 +12,6 @@ const Contact = () => {
   const [email, setEmail] = useState('');
   const [content, setContent] = useState('');
 
-  const handleSubmit = e => {
-    e.preventDefault();
-  };
-
   return (
     <section className='pt-24 px-4 pb-16' id='contact'>
       <div className='container flex flex-col lg:flex-row lg:w-full'>
@@ -57,7 +53,11 @@ const Contact = () => {
           </button>
         </div>
         <div className='max-w-xl lg:w-1/2'>
-          <form className='w-full relative' onSubmit={handleSubmit}>
+          <form
+            name='contact'
+            method='POST'
+            data-netlify='true'
+            className='w-full relative'>
             <div
               className={`${styles.formGroup + (name && ' ' + styles.active)}`}>
               <input
