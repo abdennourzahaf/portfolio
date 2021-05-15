@@ -59,6 +59,7 @@ const Contact = () => {
             enctype='application/x-www-form-urlencoded'
             data-netlify='true'
             className='w-full relative'>
+            <input type='hidden' name='form-name' value='contact' />
             <div
               className={`${styles.formGroup + (name && ' ' + styles.active)}`}>
               <input
