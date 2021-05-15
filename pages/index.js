@@ -8,8 +8,9 @@ import AvatarCenterContext from '../contexts/AvatarCenter';
 
 import Hero from '../containers/Hero/Hero';
 import Navbar from '../components/Navbar/Navbar';
+import Contact from '../containers/Contact/Contact';
 
-const Contact = dynamic(() => import('../containers/Contact/Contact'));
+// const Contact = dynamic(() => import('../containers/Contact/Contact'));
 const Footer = dynamic(() => import('../containers/Footer/Footer'));
 const Projects = dynamic(() => import('../containers/Projects/Projects'));
 const Services = dynamic(() => import('../containers/Services/Services'));
