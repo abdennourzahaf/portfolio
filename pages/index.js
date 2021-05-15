@@ -40,13 +40,17 @@ export default function Home() {
             <title>Abdennour Zahaf | Front-end developer</title>
             <meta name='description' content='Front-end developer portfolio' />
             <meta
+              property='og:title'
+              content='Abdennour Zahaf | Front-end developer'
+            />
+            <meta
               property='og:description'
               content='Front-End developer portfolio'
             />
             <link rel='icon' href='/favicon.ico' />
             <meta
               property='og:image'
-              content='https://i.ibb.co/1Gj8tHn/Frame-1.png'
+              content='https://i.ibb.co/VN52FvB/thumbnail.png'
             />
             <meta property='og:type' content='website' />
             <meta property='og:url' content='https://abdennourzahaf.me/' />
