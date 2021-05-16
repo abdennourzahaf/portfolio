@@ -5,7 +5,7 @@ import Button from '../../components/Button/Button';
 import { useSpring, animated } from 'react-spring';
 
 const Hero = () => {
-  const h3Props = useSpring({
+  const helloProps = useSpring({
     to: { opacity: 1, x: 0 },
     from: { opacity: 0, x: -10 },
     delay: 1000,
@@ -13,22 +13,22 @@ const Hero = () => {
   const h1Props = useSpring({
     to: { opacity: 1, x: 0 },
     from: { opacity: 0, x: -10 },
-    delay: 1200,
+    delay: 2000,
   });
   const h2Props = useSpring({
     to: { opacity: 1, x: 0 },
     from: { opacity: 0, x: -10 },
-    delay: 1400,
+    delay: 3000,
   });
   const pProps = useSpring({
     to: { opacity: 1, x: 0 },
     from: { opacity: 0, x: -10 },
-    delay: 1600,
+    delay: 4000,
   });
   const divProps = useSpring({
     to: { opacity: 1, x: 0 },
     from: { opacity: 0, x: -10 },
-    delay: 1800,
+    delay: 4000,
   });
   const avatatProps = useSpring({
     to: { scale: 1 },
@@ -51,11 +51,10 @@ const Hero = () => {
             className='text-gray-dark font-size-1-4 font-semibold leading-tight mb-5 2xl:text-2xl'>
             Front-end web developer
           </animated.h2>
-          <animated.h3
-            style={h3Props}
-            className='text-gray-dark font-size-1-3 font-semibold mb-1 order-first 2xl:text-2xl'>
-            Hello, I’m
-          </animated.h3>
+          <h3 className='text-gray-dark font-size-1-3 font-semibold mb-1 order-first 2xl:text-2xl'>
+            <animated.span style={helloProps}>Hello</animated.span>
+            <animated.span style={h1Props}>, I’m</animated.span>
+          </h3>
           <animated.p
             style={pProps}
             className='font-roboto text-text text-base font-normal mb-2 max-w-md'>

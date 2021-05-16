@@ -11,7 +11,7 @@ const Navbar = () => {
   const props = useSpring({
     to: { opacity: 1, y: 0 },
     from: { opacity: 0, y: -100 },
-    delay: 2400,
+    delay: 4000,
   });
 
   const [isMobileNavOpen, setIsMobileNavOpen] = useState(false);
