@@ -5,6 +5,7 @@ import Button from '../../components/Button/Button';
 const Hero = () => {
   return (
     <section className='flex items-center mb-28 2xl:px-screen-12' id='about'>
+      <div id='reference' className='absolute top-0'></div>
       <div className='font-raleway bg-primary-light inline-flex w-full justify-center items-center relative px-4 pb-12 pt-34 rounded-br-xl md:px-10 2xl:w-fit 2xl:pt-48 2xl:pr-32 2xl:pb-40 2xl:pl-32 2xl:ml-16 2xl:rounded-br-full 2xl:rounded-bl-full'>
         <div className='inline-flex flex-col'>
           <h1 className='text-primary-dark font-size-2-7 font-extrabold leading-tight mb-3 2xl:text-6xl'>

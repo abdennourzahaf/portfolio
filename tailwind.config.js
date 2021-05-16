@@ -4,7 +4,7 @@ module.exports = {
     './containers/**/*.{js,ts,jsx,tsx}',
     './components/**/*.{js,ts,jsx,tsx}',
   ],
-  darkMode: false,
+  darkMode: 'class',
   theme: {
     colors: {
       primary: { light: '#f5f6ff', DEFAULT: '#4758fc', dark: '#3644cd' },

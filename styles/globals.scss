@@ -12,6 +12,18 @@ body {
   overflow-x: hidden;
 }
 
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: $black;
+}
+
+::-webkit-scrollbar-thumb {
+  background: $primary;
+}
+
 p {
   line-height: 1.5;
 }

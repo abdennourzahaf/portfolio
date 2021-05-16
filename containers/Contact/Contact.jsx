@@ -56,7 +56,7 @@ const Contact = () => {
           <form
             name='contact'
             method='POST'
-            enctype='application/x-www-form-urlencoded'
+            encType='application/x-www-form-urlencoded'
             data-netlify='true'
             className='w-full relative'>
             <input type='hidden' name='form-name' value='contact' />

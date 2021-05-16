@@ -8,27 +8,21 @@ import Button from '../Button/Button';
 
 const Navbar = () => {
   const [isMobileNavOpen, setIsMobileNavOpen] = useState(false);
-
-  let listener;
   const [scrolledEnough, setScrolledEnough] = useState(false);
 
   useEffect(() => {
-    listener = document.addEventListener('scroll', e => {
-      var scrolled = document.scrollingElement.scrollTop;
-      if (scrolled >= 20) {
-        if (!scrolledEnough) {
-          setScrolledEnough(true);
-        }
-      } else {
-        if (scrolledEnough) {
-          setScrolledEnough(false);
-        }
-      }
-    });
-    return () => {
-      document.removeEventListener('scroll', listener);
-    };
-  }, [scrolledEnough]);
+    const reference = document.querySelector('#reference');
+
+    const sectionObserver = new IntersectionObserver(
+      entries =>
+        entries.forEach(entry => setScrolledEnough(!entry.isIntersecting)),
+      {
+        threshold: 1,
+      },
+    );
+
+    sectionObserver.observe(reference);
+  }, []);
 
   return (
     <header
