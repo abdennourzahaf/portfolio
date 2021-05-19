@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import Link from 'next/link';
-import { useSpring, animated } from 'react-spring';
 
 import { MENU_ITEMS } from '../../lib/data';
 import MenuBurger from '../SVG/MenuBurger';
@@ -8,12 +7,6 @@ import OptimizedImage from '../OptimizedImage/OptimizedImage';
 import Button from '../Button/Button';
 
 const Navbar = () => {
-  const props = useSpring({
-    to: { opacity: 1, y: 0 },
-    from: { opacity: 0, y: -100 },
-    delay: 4000,
-  });
-
   const [isMobileNavOpen, setIsMobileNavOpen] = useState(false);
   const [scrolledEnough, setScrolledEnough] = useState(false);
 
@@ -32,8 +25,7 @@ const Navbar = () => {
   }, []);
 
   return (
-    <animated.header
-      style={props}
+    <header
       className={`fixed top-0 w-full z-50 transition-bg ${
         scrolledEnough ? 'bg-gray-light shadow-bottom' : ''
       }`}>
@@ -56,9 +48,7 @@ const Navbar = () => {
           ))}
         </ul>
         <div className='flex justify-center'>
-          <a href='#contact'>
-            <Button label='Say Hello' />
-          </a>
+          <Button link href='#contact' label='Say Hello' />
         </div>
       </nav>
       <nav
@@ -81,9 +71,7 @@ const Navbar = () => {
             ))}
           </ul>
           <div className='flex items-center'>
-            <a href='#contact'>
-              <Button label='Say Hello' />
-            </a>
+            <Button link href='#contact' label='Say Hello' />
           </div>
         </div>
         <button
@@ -93,7 +81,7 @@ const Navbar = () => {
           <MenuBurger />
         </button>
       </nav>
-    </animated.header>
+    </header>
   );
 };
 

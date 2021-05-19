@@ -24,6 +24,7 @@ const Projects = () => {
     });
     glide.mount();
   });
+
   return (
     <section
       className='bg-primary-light py-16 rounded-tr-xl rounded-br-xl lg:rounded-tr-2xl lg:rounded-br-2xl'

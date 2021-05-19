@@ -3,7 +3,7 @@ import Document, { Html, Head, Main, NextScript } from 'next/document';
 class MyDocument extends Document {
   render() {
     return (
-      <Html lang='en'>
+      <Html lang='en' className='dark'>
         <Head>
           <link rel='preconnect' href='https://fonts.gstatic.com' />
           <link
@@ -18,6 +18,21 @@ class MyDocument extends Document {
         <body>
           <Main />
           <NextScript />
+          <script
+            type='text/javascript'
+            dangerouslySetInnerHTML={{
+              __html: `
+                        if (window.netlifyIdentity) {
+                          window.netlifyIdentity.on("init", user => {
+                            if (!user) {
+                              window.netlifyIdentity.on("login", () => {
+                                document.location.href = "/admin/";
+                              });
+                            }
+                          });
+                        }
+                  `,
+            }}></script>
         </body>
       </Html>
     );
