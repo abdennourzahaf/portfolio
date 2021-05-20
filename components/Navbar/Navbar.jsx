@@ -52,8 +52,8 @@ const Navbar = () => {
         </div>
       </nav>
       <nav
-        className={`flex w-full items-center transition-padding  ${
-          scrolledEnough ? 'py-4 px-8 ' : 'p-6 lg:p-10 '
+        className={`flex w-full items-center transition-padding ${
+          scrolledEnough ? 'py-4 px-8 lg:px-12' : 'p-6 lg:py-10 lg:px-16'
         }`}>
         <Link href='/'>
           <a className='w-10 mr-auto lg:mr-48 2xl:mr-screen-17'>
