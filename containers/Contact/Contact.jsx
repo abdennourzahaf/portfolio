@@ -23,8 +23,9 @@ const Contact = () => {
             Interested in working together?
           </h3>
           <p className='mb-8 text-text md:pr-28'>
-            If you have a design to build, a page to modify or you need some
-            advice about anything font-end related, feel free to contact me.
+            If you have a design to build, a page to modify, or you need some
+            advice about anything related to front-end development, feel free to
+            contact me.
           </p>
           <div className='flex items-center mb-8 w-fit md:mx-auto lg:mx-0'>
             <div className='w-per-38 mr-3 md:w-per-30'>
