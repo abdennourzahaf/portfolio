@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Link from 'next/link';
 
-import { attributes } from '../../content/index.md';
+import { attributes } from '../../content/home.md';
 import MenuBurger from '../SVG/MenuBurger';
 import OptimizedImage from '../OptimizedImage/OptimizedImage';
 import Button from '../Button/Button';
