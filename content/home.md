@@ -52,7 +52,7 @@ projects:
     link: https://rndm-qut-gnrtr.netlify.app/
     imgSrc: project-img-5.png
 services:
-  - title: Landing pages
+  - title: Landing Pages
     description: Build high quality and blazing fast landing pages from mockups.
     imgSrc: service-icon-2.png
   - title: Integrate CMS
