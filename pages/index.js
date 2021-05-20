@@ -60,7 +60,6 @@ export default function Home() {
             />
             <meta property='og:type' content='website' />
             <meta property='og:url' content='https://abdennourzahaf.me/' />
-            <script src='https://identity.netlify.com/v1/netlify-identity-widget.js'></script>
           </Head>
           <Navbar />
           <main>

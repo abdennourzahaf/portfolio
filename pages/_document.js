@@ -18,6 +18,7 @@ class MyDocument extends Document {
         <body>
           <Main />
           <NextScript />
+          <script src='https://identity.netlify.com/v1/netlify-identity-widget.js' />
           <script
             type='text/javascript'
             dangerouslySetInnerHTML={{
@@ -32,7 +33,8 @@ class MyDocument extends Document {
                           });
                         }
                   `,
-            }}></script>
+            }}
+          />
         </body>
       </Html>
     );
