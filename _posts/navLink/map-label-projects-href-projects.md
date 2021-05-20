@@ -1,4 +1,0 @@
----
-label: Projects
-href: "#projects"
----

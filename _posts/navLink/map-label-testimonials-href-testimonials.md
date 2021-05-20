@@ -1,4 +1,0 @@
----
-label: Testimonials
-href: "#testimonials"
----

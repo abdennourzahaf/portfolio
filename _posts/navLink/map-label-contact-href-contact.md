@@ -1,4 +1,0 @@
----
-label: Contact
-href: "#contact"
----
