@@ -2,7 +2,7 @@ const sitemap = require('nextjs-sitemap-generator');
 
 sitemap({
   baseUrl: 'https://abdennourzahaf.me',
-  ignoredPaths: ['assets'],
+  ignoredPaths: ['assets', 'admin'],
   ignoredExtensions: ['png', 'xml', 'ico'],
   pagesDirectory: __dirname + '\\out',
   targetDirectory: 'out/',
