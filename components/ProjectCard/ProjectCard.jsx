@@ -18,7 +18,7 @@ const ProjectCard = ({ title, description, link, imgSrc }) => {
           className='group text-primary inline-flex items-center'
           target='_blank'
           rel='noreferrer'>
-          Visit Live Site
+          Visit Website
           <span className='flex items-center ml-2 transition-trans transform group-hover:translate-x-1'>
             <LinkIcon />
           </span>

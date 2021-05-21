@@ -1,7 +1,6 @@
 import React, { useRef, useState } from 'react';
 import Button from '../../components/Button/Button';
 import OptimizedImage from '../../components/OptimizedImage/OptimizedImage';
-import DownArrowIcon from '../../components/SVG/DownArrowIcon';
 import EmailIcon from '../../components/SVG/EmailIcon';
 import styles from './styles.module.scss';
 
@@ -10,10 +9,10 @@ const Contact = () => {
 
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
-  const [content, setContent] = useState('');
+  const [message, setMessage] = useState('');
 
   return (
-    <section className='pt-24 px-4 pb-16' id='contact'>
+    <section className='pt-24 px-4 pb-24' id='contact'>
       <div className='container flex flex-col lg:flex-row lg:w-full'>
         <div className='lg:w-1/2'>
           <h2 className='font-size-2 font-bold mb-4 leading-none text-text-dark md:text-5xl'>
@@ -44,14 +43,6 @@ const Contact = () => {
               </a>
             </div>
           </div>
-          <button
-            className='flex items-center text-text-light mb-2 md:mx-auto lg:mx-0'
-            onClick={() => inputRef.current.focus()}>
-            OR Simply fill out the form
-            <span className='flex items-center ml-2 transform lg:-rotate-90'>
-              <DownArrowIcon />
-            </span>
-          </button>
         </div>
         <div className='max-w-xl lg:w-1/2'>
           <form
@@ -90,26 +81,19 @@ const Contact = () => {
             </div>
             <div
               className={`${
-                styles.formGroup + (content && ' ' + styles.active)
+                styles.formGroup + (message && ' ' + styles.active)
               }`}>
               <textarea
-                id='content'
-                name='content'
-                value={content}
-                onChange={({ target }) => setContent(target.value)}
+                id='message'
+                name='message'
+                value={message}
+                onChange={({ target }) => setMessage(target.value)}
                 rows='5'
               />
               <span></span>
-              <label htmlFor='content'>Content</label>
+              <label htmlFor='message'>Message</label>
             </div>
             <Button label='Submit' />
-            <div className='hidden absolute h-60 top-1/2 right-0 -z-1 opacity-10 transform translate-x-3/4 -translate-y-3/4 md:block'>
-              <OptimizedImage
-                src='logo.svg'
-                alt='background'
-                className='h-full'
-              />
-            </div>
           </form>
         </div>
       </div>

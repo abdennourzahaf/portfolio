@@ -17,8 +17,7 @@ const Testimonials = dynamic(() =>
   import('../containers/Testimonials/Testimonials'),
 );
 
-export default function Home(props) {
-  console.log('🚀 ~ file: index.js ~ line 21 ~ Home ~ props', props);
+export default function Home() {
   const [spring, setSpring] = useSpring(() => ({
     xy: [0, 0],
     config: { mass: 10, tension: 550, friction: 140 },

@@ -9,7 +9,7 @@ const Hero = () => {
       <div className='font-raleway bg-primary-light inline-flex w-full justify-center items-center relative px-4 pb-12 pt-34 rounded-br-xl md:px-10 2xl:w-fit 2xl:pt-48 2xl:pr-32 2xl:pb-40 2xl:pl-32 2xl:ml-16 2xl:rounded-br-full 2xl:rounded-bl-full'>
         <div className='inline-flex flex-col'>
           <h1 className='block text-gray-dark font-size-1-3 font-semibold mb-1 order-first 2xl:text-2xl'>
-            Hello, I’m
+            Hi, I’m
           </h1>
           <h2 className='block text-primary-dark font-size-2-7 font-extrabold leading-tight mb-3 2xl:text-6xl'>
             Abdennour Zahaf

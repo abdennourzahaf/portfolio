@@ -26,9 +26,7 @@ const Projects = () => {
   });
 
   return (
-    <section
-      className='bg-primary-light py-16 rounded-tr-xl rounded-br-xl lg:rounded-tr-2xl lg:rounded-br-2xl'
-      id='projects'>
+    <section className='bg-primary-light py-16' id='projects'>
       <SectionHeader
         title='projects'
         primary='Making Designs Come to Life!'
