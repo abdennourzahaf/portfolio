@@ -17,7 +17,8 @@ const Testimonials = dynamic(() =>
   import('../containers/Testimonials/Testimonials'),
 );
 
-export default function Home() {
+export default function Home(props) {
+  console.log('🚀 ~ file: index.js ~ line 21 ~ Home ~ props', props);
   const [spring, setSpring] = useSpring(() => ({
     xy: [0, 0],
     config: { mass: 10, tension: 550, friction: 140 },
@@ -78,3 +79,13 @@ export default function Home() {
     </div>
   );
 }
+
+// export async function getStaticProps() {
+//   try {
+//     const res = await fetch('http://localhost:1337/services');
+//     const services = await res.json();
+//     return { props: { services } };
+//   } catch (error) {
+//     return { props: { error } };
+//   }
+// }
