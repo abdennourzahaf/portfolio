@@ -2,9 +2,9 @@ import React, { useEffect } from 'react';
 import Glide from '@glidejs/glide';
 import ProjectCard from '../../components/ProjectCard/ProjectCard';
 import SectionHeader from '../../components/SectionHeader/SectionHeader';
-import { attributes } from '../../content/home.md';
 import '@glidejs/glide/dist/css/glide.core.min.css';
 import SliderButton from '../../components/SliderButton/SliderButton';
+import { PROJECTS } from '../../lib/data';
 
 const Projects = () => {
   useEffect(() => {
@@ -36,7 +36,7 @@ const Projects = () => {
         <div className='glide' id='projects-slider'>
           <div className='glide__track' data-glide-el='track'>
             <ul className='glide__slides'>
-              {attributes.projects.map((project, index) => (
+              {PROJECTS.map((project, index) => (
                 <li className='glide__slide px-3' key={index}>
                   <ProjectCard {...project} />
                 </li>

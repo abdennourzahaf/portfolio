@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import Link from 'next/link';
 
-import { attributes } from '../../content/home.md';
 import MenuBurger from '../SVG/MenuBurger';
 import OptimizedImage from '../OptimizedImage/OptimizedImage';
 import Button from '../Button/Button';
+import { MENU_ITEMS } from '../../lib/data';
 
 const Navbar = () => {
   const [isMobileNavOpen, setIsMobileNavOpen] = useState(false);
@@ -39,7 +39,7 @@ const Navbar = () => {
           isMobileNavOpen ? 'translate-x-0 ' : 'translate-x-full '
         }`}>
         <ul className='flex flex-col items-center font-semibold m-auto font-size-1-2'>
-          {attributes.navLinks.map(({ label, href }, index) => (
+          {MENU_ITEMS.map(({ label, href }, index) => (
             <li
               className='my-4 transition-color hover:text-primary'
               key={index}>
@@ -62,7 +62,7 @@ const Navbar = () => {
         </Link>
         <div className='hidden items-center justify-between flex-1 lg:flex'>
           <ul className='flex items-center font-semibold'>
-            {attributes.navLinks.map(({ label, href }, index) => (
+            {MENU_ITEMS.map(({ label, href }, index) => (
               <li
                 className='mx-4 transition-color hover:text-primary'
                 key={index}>

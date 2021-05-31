@@ -1,10 +1,9 @@
 import React, { useEffect } from 'react';
 import Glide from '@glidejs/glide';
 import SectionHeader from '../../components/SectionHeader/SectionHeader';
-// import { TESTIMONIALS } from '../../lib/data';
+import { TESTIMONIALS } from '../../lib/data';
 import TestimonialCard from '../../components/TestimonialCard/TestimonialCard';
 import SliderButton from '../../components/SliderButton/SliderButton';
-import { attributes } from '../../content/home.md';
 
 const Testimonials = () => {
   useEffect(() => {
@@ -35,7 +34,7 @@ const Testimonials = () => {
         <div className='glide' id='testimonials-slider'>
           <div className='glide__track' data-glide-el='track'>
             <ul className='glide__slides'>
-              {attributes.testimonials.map((testimonial, index) => (
+              {TESTIMONIALS.map((testimonial, index) => (
                 <li className='glide__slide p-8' key={index}>
                   <TestimonialCard {...testimonial} />
                 </li>

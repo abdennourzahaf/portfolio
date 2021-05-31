@@ -78,13 +78,3 @@ export default function Home() {
     </div>
   );
 }
-
-// export async function getStaticProps() {
-//   try {
-//     const res = await fetch('http://localhost:1337/services');
-//     const services = await res.json();
-//     return { props: { services } };
-//   } catch (error) {
-//     return { props: { error } };
-//   }
-// }
