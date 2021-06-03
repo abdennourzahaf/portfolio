@@ -61,6 +61,7 @@ const Contact = () => {
                 value={name}
                 onChange={({ target }) => setName(target.value)}
                 ref={inputRef}
+                required
               />
               <span></span>
               <label htmlFor='name'>Name</label>
@@ -75,6 +76,7 @@ const Contact = () => {
                 name='email'
                 value={email}
                 onChange={({ target }) => setEmail(target.value)}
+                required
               />
               <span></span>
               <label htmlFor='email'>Email</label>
@@ -89,6 +91,7 @@ const Contact = () => {
                 value={message}
                 onChange={({ target }) => setMessage(target.value)}
                 rows='5'
+                required
               />
               <span></span>
               <label htmlFor='message'>Message</label>
