@@ -5,6 +5,7 @@ class MyDocument extends Document {
     return (
       <Html lang='en'>
         <Head>
+          <title>Abdennour Zahaf | Front-end developer</title>
           <link rel='preconnect' href='https://fonts.gstatic.com' />
           <link
             href='https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap'
@@ -58,10 +59,44 @@ class MyDocument extends Document {
           <link rel='mask-icon' href='/safari-pinned-tab.svg' color='#4758fc' />
           <meta name='msapplication-TileColor' content='#ffffff' />
           <meta name='theme-color' content='#ffffff' />
+          <meta name='description' content='Front-end developer portfolio' />
+          <meta
+            name='keywords'
+            content='front end, front-end, front-end developer, portfolio, abdennour zahaf'
+          />
+          <meta
+            property='og:title'
+            content='Abdennour Zahaf | Front-end developer'
+          />
+          <meta
+            property='og:description'
+            content='Front-End developer portfolio'
+          />
+          <meta
+            property='og:image'
+            content='https://i.ibb.co/VN52FvB/thumbnail.png'
+          />
+          <meta property='og:type' content='website' />
+          <meta property='og:url' content='https://abdennourzahaf.me/' />
         </Head>
         <body>
           <Main />
           <NextScript />
+
+          <script
+            async
+            src='https://www.googletagmanager.com/gtag/js?id=UA-195868593-1'></script>
+          <script
+            dangerouslySetInnerHTML={{
+              __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+
+              gtag('config', 'UA-195868593-1');
+            `,
+            }}
+          />
         </body>
       </Html>
     );

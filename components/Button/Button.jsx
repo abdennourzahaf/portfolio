@@ -20,7 +20,7 @@ const Button = React.forwardRef((props, ref) => {
     </a>
   ) : (
     <button
-      className={`group w-fit  py-3 px-10 rounded-full inline-flex items-center transition-bg-color font-medium whitespace-nowrap border-2 border-primary md:py-3 md:px-6 ${
+      className={`group w-fit  py-3 px-10 rounded-full inline-flex items-center transition-bg-color font-medium whitespace-nowrap border-2 border-primary md:py-3 md:px-6 focus:outline-none ${
         block ? 'w-full' : ''
       } ${
         secondary

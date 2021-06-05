@@ -42,28 +42,6 @@ export default function Home() {
       onMouseLeave={() => setSpring.start({ xy: [0, 0] })}>
       <AvatarCenterContext.Provider value={{ centerX, setCenterX }}>
         <SpringContext.Provider value={spring}>
-          <Head>
-            <title>Abdennour Zahaf | Front-end developer</title>
-            <meta name='description' content='Front-end developer portfolio' />
-            <meta
-              name='keywords'
-              content='front end, front-end, front-end developer, portfolio, abdennour zahaf'
-            />
-            <meta
-              property='og:title'
-              content='Abdennour Zahaf | Front-end developer'
-            />
-            <meta
-              property='og:description'
-              content='Front-End developer portfolio'
-            />
-            <meta
-              property='og:image'
-              content='https://i.ibb.co/VN52FvB/thumbnail.png'
-            />
-            <meta property='og:type' content='website' />
-            <meta property='og:url' content='https://abdennourzahaf.me/' />
-          </Head>
           <Navbar />
           <main>
             <Hero />
