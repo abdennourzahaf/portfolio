@@ -33,26 +33,32 @@ export default function Home() {
   const mouseMoveHandler = ({ clientX, clientY }) => {
     let xy = calc(clientX, clientY);
     if (Number.isFinite(xy[0])) return setSpring.start({ xy });
-    else return setSpring.start({ xy: [0, 0] });
+    return setSpring.start({ xy: [0, 0] });
   };
 
   return (
-    <div
-      onMouseMove={mouseMoveHandler}
-      onMouseLeave={() => setSpring.start({ xy: [0, 0] })}>
-      <AvatarCenterContext.Provider value={{ centerX, setCenterX }}>
-        <SpringContext.Provider value={spring}>
-          <Navbar />
-          <main>
-            <Hero />
-            <Projects />
-            <Services />
-            <Testimonials />
-            <Contact />
-          </main>
-          <Footer />
-        </SpringContext.Provider>
-      </AvatarCenterContext.Provider>
-    </div>
+    <>
+      <Head>
+        <title>Abdennour Zahaf | Front-end developer</title>
+      </Head>
+
+      <div
+        onMouseMove={mouseMoveHandler}
+        onMouseLeave={() => setSpring.start({ xy: [0, 0] })}>
+        <AvatarCenterContext.Provider value={{ centerX, setCenterX }}>
+          <SpringContext.Provider value={spring}>
+            <Navbar />
+            <main>
+              <Hero />
+              <Projects />
+              <Services />
+              <Testimonials />
+              <Contact />
+            </main>
+            <Footer />
+          </SpringContext.Provider>
+        </AvatarCenterContext.Provider>
+      </div>
+    </>
   );
 }
