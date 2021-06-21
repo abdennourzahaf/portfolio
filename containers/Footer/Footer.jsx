@@ -7,7 +7,7 @@ const Footer = () => {
   return (
     <footer className='bg-text-light'>
       <div className='container'>
-        <div className='flex flex-col items-center p-10 border-footer md:py-14 md:px-0 lg:flex-row lg:justify-between lg:border-footer-lg'>
+        <div className='flex flex-col items-center p-10 border-footer md:py-14 md:px-0 lg:flex-row lg:justify-between'>
           <ul className='flex items-center flex-col font-medium text-gray-light mb-4 md:flex-row md:mb-8 lg:mb-0'>
             {MENU_ITEMS.map(({ label, href }, index) => (
               <li
