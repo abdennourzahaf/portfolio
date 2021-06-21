@@ -15,10 +15,10 @@ const Contact = () => {
     <section className='pt-24 px-4 pb-24' id='contact'>
       <div className='container flex flex-col lg:flex-row lg:w-full'>
         <div className='lg:w-1/2'>
-          <h2 className='font-size-2 font-bold mb-4 leading-none text-text-dark md:text-5xl'>
+          <h2 className='text-[2rem] font-bold mb-4 leading-none text-text-dark md:text-5xl'>
             Let’s Talk!
           </h2>
-          <h3 className='font-size-1-3 font-normal mb-6 text-text-light md:text-3xl'>
+          <h3 className='text-[1.3rem] font-normal mb-6 text-text-light md:text-3xl'>
             Interested in working together?
           </h3>
           <p className='mb-8 text-text md:pr-28'>
@@ -26,8 +26,8 @@ const Contact = () => {
             advice about anything related to front-end development, feel free to
             contact me.
           </p>
-          <div className='flex items-center mb-8 w-fit md:mx-auto lg:mx-0'>
-            <div className='w-per-38 mr-3 md:w-per-30'>
+          <div className='flex items-center mb-8 w-[fit-content] md:mx-auto lg:mx-0'>
+            <div className='w-per-[38%] mr-3 md:w-[30%]'>
               <OptimizedImage src='avatar.svg' alt='form-image' />
             </div>
             <div className='text-text-light'>

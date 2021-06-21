@@ -26,7 +26,7 @@ const Navbar = () => {
 
   return (
     <header
-      className={`fixed top-0 w-full z-50 transition-bg ${
+      className={`fixed top-0 w-full z-50 transition-bgc ${
         scrolledEnough ? 'bg-gray-light shadow-bottom' : ''
       }`}>
       <div
@@ -35,10 +35,10 @@ const Navbar = () => {
         }`}
         onClick={() => setIsMobileNavOpen(false)}></div>
       <nav
-        className={`flex flex-col z-10 absolute right-0 h-screen bg-gray-light py-8 px-5 transform transition-transform w-screen-80 sm:w-screen-65 md:w-screen-40 lg:hidden ${
+        className={`flex flex-col z-10 absolute right-0 h-screen bg-gray-light py-8 px-5 transform transition-transform w-[80vw] sm:w-[65vw] md:w-[40vw] lg:hidden ${
           isMobileNavOpen ? 'translate-x-0 ' : 'translate-x-full '
         }`}>
-        <ul className='flex flex-col items-center font-semibold m-auto font-size-1-2'>
+        <ul className='flex flex-col items-center font-semibold m-auto text-[1.2rem]'>
           {MENU_ITEMS.map(({ label, href }, index) => (
             <li
               className='my-4 transition-color hover:text-primary'
@@ -56,7 +56,7 @@ const Navbar = () => {
           scrolledEnough ? 'py-4 px-8 lg:px-12' : 'p-6 lg:py-10 lg:px-16'
         }`}>
         <Link href='/'>
-          <a className='w-10 mr-auto lg:mr-48 2xl:mr-screen-17'>
+          <a className='w-10 mr-auto lg:mr-48 2xl:mr-[17vw]'>
             <OptimizedImage src='logo.svg' alt='logo' />
           </a>
         </Link>

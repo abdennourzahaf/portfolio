@@ -23,7 +23,7 @@ const Testimonials = () => {
   }, []);
   return (
     <section
-      className='bg-primary-light py-16 rounded-tl-xl relative overflow-hidden xl:rounded-tl-full xl:rounded-bl-full'
+      className='bg-primary-light py-16 rounded-tl-[120px] relative overflow-hidden xl:rounded-tl-full xl:rounded-bl-full'
       id='testimonials'>
       <SectionHeader
         title='good words'

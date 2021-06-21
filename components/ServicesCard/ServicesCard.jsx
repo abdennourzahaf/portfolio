@@ -3,9 +3,9 @@ import OptimizedImage from '../OptimizedImage/OptimizedImage';
 
 const ServicesCard = ({ title, description, imgSrc }) => {
   return (
-    <div className='w-full h-full bg-gray-light flex flex-col items-center text-center shadow-service rounded-30 px-7 pb-8 relative mx-auto mb-4 max-w-xs'>
+    <div className='w-full h-full bg-gray-light flex flex-col items-center text-center shadow-service rounded-[30px] px-7 pb-8 relative mx-auto mb-4 max-w-xs'>
       <div className='relative mb-5'>
-        <div className='flex justify-center items-center bg-primary pt-8 px-2 pb-3 font-size-2-4 font-medium rounded-br-full rounded-bl-full'>
+        <div className='flex justify-center items-center bg-primary pt-8 px-2 pb-3 text-[2.4rem] font-medium rounded-br-full rounded-bl-full'>
           <div className='w-2/3'>
             <OptimizedImage
               src={imgSrc}

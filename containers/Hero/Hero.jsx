@@ -4,17 +4,17 @@ import Button from '../../components/Button/Button';
 
 const Hero = () => {
   return (
-    <section className='flex items-center mb-28 2xl:px-screen-12' id='about'>
+    <section className='flex items-center mb-28 2xl:px-[12vw]' id='about'>
       <div id='reference' className='absolute top-0'></div>
-      <div className='font-raleway bg-primary-light inline-flex w-full justify-center items-center relative px-4 pb-12 pt-34 rounded-br-xl md:px-10 2xl:w-fit 2xl:pt-48 2xl:pr-32 2xl:pb-40 2xl:pl-32 2xl:ml-16 2xl:rounded-br-full 2xl:rounded-bl-full'>
+      <div className='font-raleway bg-primary-light inline-flex w-full justify-center items-center relative px-4 pb-12 pt-[8.5rem] rounded-br-[120px] md:px-10 2xl:w-[fit-content] 2xl:pt-48 2xl:pr-32 2xl:pb-40 2xl:pl-32 2xl:ml-16 2xl:rounded-br-full 2xl:rounded-bl-full'>
         <div className='inline-flex flex-col'>
-          <h1 className='block text-gray-dark font-size-1-3 font-semibold mb-1 order-first 2xl:text-2xl'>
+          <h1 className='block text-gray-dark text-[1.3rem] font-semibold mb-1 order-first 2xl:text-2xl'>
             Hi, I’m
           </h1>
-          <h2 className='block text-primary-dark font-size-2-7 font-extrabold leading-tight mb-3 2xl:text-6xl'>
+          <h2 className='block text-primary-dark text-[2.7rem] font-extrabold leading-tight mb-3 2xl:text-6xl'>
             Abdennour Zahaf
           </h2>
-          <h3 className='block text-gray-dark font-size-1-4 font-semibold leading-tight mb-5 2xl:text-2xl'>
+          <h3 className='block text-gray-dark text-[1.4rem] font-semibold leading-tight mb-5 2xl:text-2xl'>
             Front-end web developer
           </h3>
           <p className='font-roboto text-text text-base font-normal mb-2 max-w-md'>
@@ -41,7 +41,7 @@ const Hero = () => {
           </div>
         </div>
 
-        <div className='hidden w-6/12 md:block lg:w-5/12 2xl:absolute 2xl:right-0 2xl:top-1/2 2xl:transform-avatar 2xl:w-screen-30'>
+        <div className='hidden w-6/12 md:block lg:w-5/12 2xl:absolute 2xl:right-0 2xl:top-1/2 2xl:transform-avatar 2xl:w-[30vw]'>
           <div>
             <Avatar />
           </div>

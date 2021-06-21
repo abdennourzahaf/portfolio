@@ -16,7 +16,7 @@ const Services = () => {
         {SERVICES_CARDS.map((card, index) => (
           <ServicesCard {...card} key={index} />
         ))}
-        <div className='absolute top-1/2 left-1/2 w-20 -z-1 transform-dots lg:transform-dots-lg lg:w-24 lg:left-1/3'>
+        <div className='absolute top-1/2 left-1/2 w-20 z-[-1] transform lg:-translate-x-1/2 lg:-translate-y-1/2 lg:w-24 lg:left-1/3'>
           <OptimizedImage src='bg-dots.png' alt='background' />
         </div>
       </div>

@@ -9,7 +9,7 @@ const ProjectCard = ({ title, description, link, imgSrc }) => {
         <OptimizedImage src={imgSrc} alt={title} className='block' />
       </div>
       <div className='px-3 my-5'>
-        <h4 className='font-medium font-size-1-4 text-text-light mb-3'>
+        <h4 className='font-medium text-[1.4rem] text-text-light mb-3'>
           {title}
         </h4>
         <p className='leading-snug text-text mb-5'>{description}</p>
