@@ -28,7 +28,7 @@ const Testimonials = () => {
       <SectionHeader
         title='good words'
         primary='What My Clients Say'
-        secondary='Every client I’ve worked with has left a 5 stars review, here’s what they say'
+        secondary='Every client I’ve worked with has left a 5 stars review. Here’s what they say.'
       />
       <div className='container mt-6'>
         <div className='glide' id='testimonials-slider'>
