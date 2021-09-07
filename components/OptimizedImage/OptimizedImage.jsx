@@ -12,15 +12,15 @@ const requireWebpImage = require.context(
   /\.png$/,
 );
 
-const OptimizedImage = ({ src, ...restProps }) => {
+const OptimizedImage = ({ src, alt, ...restProps }) => {
   if (/\.svg$/.test(src))
-    return <img src={requireImage(`./${src}`)} {...restProps} />;
+    return <img src={requireImage(`./${src}`)} alt={alt} {...restProps} />;
 
   return (
     <picture>
-      <source srcSet={requireWebpImage(`./${src}`)} type='image/webp' />
-      <source srcSet={requireImage(`./${src}`)} type='image/png' />
-      <img src={requireImage(`./${src}`)} {...restProps} />
+      <source srcSet={requireWebpImage(`./${src}`)} type="image/webp" />
+      <source srcSet={requireImage(`./${src}`)} type="image/png" />
+      <img src={requireImage(`./${src}`)} alt={alt} {...restProps} />
     </picture>
   );
 };

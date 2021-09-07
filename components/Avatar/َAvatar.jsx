@@ -12,7 +12,7 @@ const Avatar = () => {
   useEffect(() => {
     let { left, width } = ref.current.getBoundingClientRect();
     setCenterX(left + width / 2);
-  }, []);
+  }, [setCenterX]);
 
   const ref = useRef(null);
 
@@ -25,7 +25,8 @@ const Avatar = () => {
       fill='none'
       xmlns='http://www.w3.org/2000/svg'
       className='w-full h-auto'
-      ref={ref}>
+      ref={ref}
+    >
       <mask
         id='mask0'
         mask-type='alpha'
@@ -33,7 +34,8 @@ const Avatar = () => {
         x='12'
         y='40'
         width='240'
-        height='240'>
+        height='240'
+      >
         <path
           d='M132 280C198.274 280 252 226.274 252 160C252 93.7258 198.274 40 132 40C65.7258 40 12 93.7258 12 160C12 226.274 65.7258 280 132 280Z'
           fill='white'
@@ -53,7 +55,8 @@ const Avatar = () => {
         x='0'
         y='0'
         width='264'
-        height='280'>
+        height='280'
+      >
         <path
           d='M12 160C12 226.274 65.7258 280 132 280C198.274 280 252 226.274 252 160H264V0H0V160H12Z'
           fill='white'
@@ -67,7 +70,8 @@ const Avatar = () => {
           x='32'
           y='36'
           width='200'
-          height='244'>
+          height='244'
+        >
           <path
             d='M156 180.611V199H160C199.764 199 232 231.236 232 271V280H32V271C32 231.236 64.2355 199 104 199H108V180.611C90.7626 172.422 78.3722 155.687 76.3051 135.881C70.4803 135.058 66 130.052 66 124V110C66 104.054 70.3246 99.1181 76 98.1659V92C76 61.0721 101.072 36 132 36C162.928 36 188 61.0721 188 92V98.1659C193.675 99.1181 198 104.054 198 110V124C198 130.052 193.52 135.058 187.695 135.881C185.628 155.687 173.237 172.422 156 180.611Z'
             fill='white'
@@ -94,7 +98,8 @@ const Avatar = () => {
           x='32'
           y='183'
           width='200'
-          height='97'>
+          height='97'
+        >
           <path
             fillRule='evenodd'
             clipRule='evenodd'
@@ -131,7 +136,8 @@ const Avatar = () => {
           x='112'
           y='146'
           width='39'
-          height='20'>
+          height='20'
+        >
           <path
             fillRule='evenodd'
             clipRule='evenodd'
@@ -212,7 +218,8 @@ const Avatar = () => {
           x='0'
           y='0'
           width='264'
-          height='280'>
+          height='280'
+        >
           <path d='M264 0H0V280H264V0Z' fill='white' />
         </mask>
         <g mask='url(#mask5)'>
@@ -223,7 +230,8 @@ const Avatar = () => {
             x='72'
             y='9'
             width='121'
-            height='91'>
+            height='91'
+          >
             <path
               fillRule='evenodd'
               clipRule='evenodd'

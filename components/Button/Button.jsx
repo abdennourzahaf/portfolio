@@ -28,7 +28,7 @@ const Button = React.forwardRef((props, ref) => {
       'hover:text-gray-light',
       'hover:bg-primary',
       'focus:text-gray-light',
-      'focus:bg-primary',
+      'focus:bg-primary'
     );
   else
     buttonClasses.push(
@@ -37,7 +37,7 @@ const Button = React.forwardRef((props, ref) => {
       'hover:text-primary',
       'hover:bg-gray-light',
       'focus:text-primary',
-      'focus:bg-gray-light',
+      'focus:bg-gray-light'
     );
 
   if (!link) buttonClasses.push('focus:outline-none');
@@ -51,5 +51,7 @@ const Button = React.forwardRef((props, ref) => {
     </Tag>
   );
 });
+
+Button.displayName = 'Button';
 
 export default Button;
