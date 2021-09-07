@@ -5,4 +5,7 @@ module.exports = withOptimizedImages({
   eslint: {
     dirs: ['pages', 'lib', 'components', 'containers', 'contexts'],
   },
+  images: {
+    disableStaticImages: true,
+  },
 });
