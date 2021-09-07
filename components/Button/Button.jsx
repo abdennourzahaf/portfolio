@@ -1,7 +1,7 @@
 import React from 'react';
 import LinkIcon from '../SVG/LinkIcon';
 
-const Button = React.forwardRef((props, ref) => {
+const Button = (props) => {
   const { className, label, block, link, secondary, ...restProps } = props;
   const Tag = link ? 'a' : 'button';
   const buttonClasses = [
@@ -28,7 +28,7 @@ const Button = React.forwardRef((props, ref) => {
       'hover:text-gray-light',
       'hover:bg-primary',
       'focus:text-gray-light',
-      'focus:bg-primary'
+      'focus:bg-primary',
     );
   else
     buttonClasses.push(
@@ -37,7 +37,7 @@ const Button = React.forwardRef((props, ref) => {
       'hover:text-primary',
       'hover:bg-gray-light',
       'focus:text-primary',
-      'focus:bg-gray-light'
+      'focus:bg-gray-light',
     );
 
   if (!link) buttonClasses.push('focus:outline-none');
@@ -50,7 +50,7 @@ const Button = React.forwardRef((props, ref) => {
       </span>
     </Tag>
   );
-});
+};
 
 Button.displayName = 'Button';
 
