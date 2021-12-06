@@ -17,14 +17,14 @@ const Hero = () => {
           <h3 className='block text-gray-dark text-[1.4rem] font-semibold leading-tight mb-5 2xl:text-2xl'>
             Front-end web developer
           </h3>
-          <p className='font-roboto text-text text-base font-normal mb-2 max-w-md'>
+          <p className='max-w-md mb-2 text-base font-normal font-roboto text-text'>
             I develop and manage high-quality Web pages and User Interfaces
             using various modern tools and technologies. I specialize in Single
             page applications and static websites. Over the last two years, I
             have worked on many Front-end projects and delivered the best
             results regarding page speed, code quality, and client satisfaction.
           </p>
-          <div className='font-roboto inline-flex flex-col sm:flex-row'>
+          <div className='inline-flex flex-col font-roboto sm:flex-row'>
             <Button
               link
               label='Say Hello'
