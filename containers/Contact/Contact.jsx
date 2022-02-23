@@ -14,14 +14,12 @@ const Contact = () => {
 
   return (
     <section className='px-4 pt-24 pb-24' id='contact'>
-      <div className='container flex flex-col lg:flex-row lg:w-full'>
+      <div className='container flex flex-col items-center lg:flex-row lg:w-full'>
         <div className='lg:w-1/2'>
           <h2 className='text-[2rem] font-bold mb-4 leading-none text-text-dark md:text-5xl'>
             Let’s Talk!
           </h2>
-          <h3 className='text-[1.3rem] font-normal mb-6 text-text-light md:text-3xl'>
-            Interested in working together?
-          </h3>
+
           <p className='mb-8 text-text md:pr-28'>
             If you have a design to build, a page to modify, or you need some
             advice about anything related to front-end development, feel free to
