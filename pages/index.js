@@ -13,9 +13,6 @@ const Contact = dynamic(() => import('../containers/Contact/Contact'));
 const Footer = dynamic(() => import('../containers/Footer/Footer'));
 const Projects = dynamic(() => import('../containers/Projects/Projects'));
 const Services = dynamic(() => import('../containers/Services/Services'));
-const Testimonials = dynamic(() =>
-  import('../containers/Testimonials/Testimonials'),
-);
 
 export default function Home() {
   const [spring, setSpring] = useSpring(() => ({
@@ -44,7 +41,8 @@ export default function Home() {
 
       <div
         onMouseMove={mouseMoveHandler}
-        onMouseLeave={() => setSpring.start({ xy: [0, 0] })}>
+        onMouseLeave={() => setSpring.start({ xy: [0, 0] })}
+      >
         <AvatarCenterContext.Provider value={{ centerX, setCenterX }}>
           <SpringContext.Provider value={spring}>
             <Navbar />
@@ -52,7 +50,6 @@ export default function Home() {
               <Hero />
               <Projects />
               <Services />
-              <Testimonials />
               <Contact />
             </main>
             <Footer />
