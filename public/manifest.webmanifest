@@ -4,8 +4,8 @@
   "display": "standalone",
   "scope": "/",
   "start_url": "/",
-  "name": "Abdennour Zahaf",
-  "short_name": "Abdennour Zahaf",
+  "name": "Abdennour",
+  "short_name": "Abdennour",
   "description": "Front-End developer portfolio",
   "icons": [
     {

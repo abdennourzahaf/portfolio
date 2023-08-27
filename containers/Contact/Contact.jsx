@@ -32,15 +32,6 @@ const Contact = () => {
             <div className='text-text-light'>
               <p className='font-bold'>REPLY TIME</p>
               <p className='mb-1 text-xl font-bold'>Within 24 hours</p>
-              <a
-                className='flex items-center transition-color hover:text-primary'
-                href='mailto:zfnori@gmail.com'
-              >
-                <span className='flex items-center mr-1 text-primary'>
-                  <EmailIcon />
-                </span>
-                <span>zfnori@gmail.com</span>
-              </a>
             </div>
           </div>
         </div>
@@ -100,17 +91,6 @@ const Contact = () => {
             </div>
             <div className='flex flex-col items-center justify-between md:flex-row'>
               <Button label='Submit' />
-              <a
-                href='https://www.upwork.com/freelancers/~013e5420f61f88d376'
-                className='inline-flex items-center mt-4 group text-primary md:mt-0'
-                target='_blank'
-                rel='noreferrer'
-              >
-                You can also find me on Upwork
-                <span className='flex items-center ml-2 transform transition-trans group-hover:translate-x-1'>
-                  <LinkIcon />
-                </span>
-              </a>
             </div>
           </form>
         </div>

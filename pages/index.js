@@ -39,12 +39,13 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Abdennour Zahaf | Front-end developer</title>
+        <title>Abdennour | Front-end developer</title>
       </Head>
 
       <div
         onMouseMove={mouseMoveHandler}
-        onMouseLeave={() => setSpring.start({ xy: [0, 0] })}>
+        onMouseLeave={() => setSpring.start({ xy: [0, 0] })}
+      >
         <AvatarCenterContext.Provider value={{ centerX, setCenterX }}>
           <SpringContext.Provider value={spring}>
             <Navbar />

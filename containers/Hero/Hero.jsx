@@ -12,7 +12,7 @@ const Hero = () => {
             Hi, I’m
           </h1>
           <h2 className='block text-primary-dark text-[2.7rem] font-extrabold leading-tight mb-3 2xl:text-6xl'>
-            Abdennour Zahaf
+            Abdennour
           </h2>
           <h3 className='block text-gray-dark text-[1.4rem] font-semibold leading-tight mb-5 2xl:text-2xl'>
             Front-end web developer
@@ -20,9 +20,9 @@ const Hero = () => {
           <p className='max-w-md mb-2 text-base font-normal font-roboto text-text'>
             I develop and manage high-quality Web pages and User Interfaces
             using various modern tools and technologies. I specialize in Single
-            page applications and static websites. Over the last two years, I
-            have worked on many Front-end projects and delivered the best
-            results regarding page speed, code quality, and client satisfaction.
+            page applications and static websites. I have worked on many
+            Front-end projects and delivered the best results regarding page
+            speed, code quality, and client satisfaction.
           </p>
           <div className='inline-flex flex-col font-roboto sm:flex-row'>
             <Button

@@ -61,12 +61,9 @@ class MyDocument extends Document {
           <meta name='description' content='Front-end developer portfolio' />
           <meta
             name='keywords'
-            content='front end, front-end, front-end developer, portfolio, abdennour zahaf'
+            content='front end, front-end, front-end developer, portfolio, abdennour'
           />
-          <meta
-            property='og:title'
-            content='Abdennour Zahaf | Front-end developer'
-          />
+          <meta property='og:title' content='Abdennour | Front-end developer' />
           <meta
             property='og:description'
             content='Front-End developer portfolio'
@@ -76,7 +73,7 @@ class MyDocument extends Document {
             content='https://i.ibb.co/VN52FvB/thumbnail.png'
           />
           <meta property='og:type' content='website' />
-          <meta property='og:url' content='https://abdennourzahaf.me/' />
+          <meta property='og:url' content='https://abdennour.me/' />
         </Head>
         <body>
           <Main />
@@ -84,7 +81,8 @@ class MyDocument extends Document {
 
           <script
             async
-            src='https://www.googletagmanager.com/gtag/js?id=UA-195868593-1'></script>
+            src='https://www.googletagmanager.com/gtag/js?id=UA-195868593-1'
+          ></script>
           <script
             dangerouslySetInnerHTML={{
               __html: `
