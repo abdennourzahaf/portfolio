@@ -68,10 +68,6 @@ class MyDocument extends Document {
             property='og:description'
             content='Front-End developer portfolio'
           />
-          <meta
-            property='og:image'
-            content='https://i.ibb.co/VN52FvB/thumbnail.png'
-          />
           <meta property='og:type' content='website' />
           <meta property='og:url' content='https://abdennour.me/' />
         </Head>
