@@ -48,7 +48,7 @@ const Navbar = () => {
           ))}
         </ul>
         <div className='flex justify-center'>
-          <Button link href='#contact' label='Say Hello' />
+          <Button link href='/resume.pdf' label='Resume' />
         </div>
       </nav>
       <nav
@@ -71,7 +71,7 @@ const Navbar = () => {
             ))}
           </ul>
           <div className='flex items-center'>
-            <Button link href='#contact' label='Say Hello' />
+            <Button link href='/resume.pdf' label='Resume' />
           </div>
         </div>
         <button

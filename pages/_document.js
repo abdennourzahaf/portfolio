@@ -58,15 +58,18 @@ class MyDocument extends Document {
           <link rel='mask-icon' href='/safari-pinned-tab.svg' color='#4758fc' />
           <meta name='msapplication-TileColor' content='#ffffff' />
           <meta name='theme-color' content='#ffffff' />
-          <meta name='description' content='Front-end developer portfolio' />
+          <meta name='description' content='Full-stack developer portfolio' />
           <meta
             name='keywords'
-            content='front end, front-end, front-end developer, portfolio, abdennour'
+            content='full stack, full-stack, full-stack developer, portfolio, abdennour'
           />
-          <meta property='og:title' content='Abdennour | Front-end developer' />
+          <meta
+            property='og:title'
+            content='Abdennour | Full-stack developer'
+          />
           <meta
             property='og:description'
-            content='Front-End developer portfolio'
+            content='Full-stack developer portfolio'
           />
           <meta property='og:type' content='website' />
           <meta property='og:url' content='https://abdennour.me/' />

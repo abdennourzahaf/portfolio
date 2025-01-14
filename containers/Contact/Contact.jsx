@@ -22,7 +22,7 @@ const Contact = () => {
 
           <p className='mb-8 text-text md:pr-28'>
             If you have a design to build, a page to modify, or you need some
-            advice about anything related to front-end development, feel free to
+            advice about anything related to web development, feel free to
             contact me.
           </p>
           <div className='flex items-center mb-8 w-[fit-content] md:mx-auto lg:mx-0'>

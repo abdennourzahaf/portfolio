@@ -39,7 +39,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Abdennour | Front-end developer</title>
+        <title>Abdennour | Full-stack developer</title>
       </Head>
 
       <div
